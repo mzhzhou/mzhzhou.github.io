@@ -18,37 +18,39 @@ nav a {
     margin: 0 10px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: #1A3E2F;
-    font-family: "Open Sans";
-}
-
 h1 {
     font-size: 50px;
     text-align: left;
+    color: #1A3E2F;
+    font-family: "Open Sans";
 }
 
 h2 {
     font-size: 30px;
     text-align: left;
+    color: #1A3E2F;
+    font-family: "Open Sans";
 }
 
 h3 {
     font-size: 40px;
     text-align: right;
+    color: #1A3E2F;
+    font-family: "Open Sans";
 }
 
 h4 {
     font-size: 40px;
     opacity: 0.4;
     text-align: right;
+    color: #1A3E2F;
+    font-family: "Open Sans";
 }
 
 h5 {
     font-size: 40px;
     opacity: 0.4;
     text-align: right;
+    color: #1A3E2F;
+    font-family: "Open Sans";
 }
