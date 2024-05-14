@@ -129,7 +129,7 @@ to this section's matching END comment to see page-specific styles.
 
 .hover_image {
     position: absolute;
-    width: 400px;
+    width: 200px;
     /*   height: 300px; */
     bottom: 100px;
     right: 0px;
