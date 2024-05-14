@@ -321,9 +321,10 @@ h7 {
     padding: 0 1rem;
 }
 
-.image_container {
+.prof_container {
     margin-top: 150px;
     margin-bottom: 80px;
+    width: 400px;
     /*   border: 1px solid black; */
 }
 
@@ -341,6 +342,7 @@ h7 {
     align-content: center;
     justify-content: center;
     align-items: left;
+    font-family: "Open Sans", sans-serif;
     /*   border: 1px solid black; */
 }
 
@@ -350,6 +352,7 @@ h7 {
     display: flex;
     flex-direction: row;
     margin-left: 100px;
+    font-family: "Open Sans", sans-serif;
     /*   border: 1px solid black; */
 }
 
@@ -361,6 +364,7 @@ h7 {
     padding-right: 10px;
     /*   border: 1px solid black; */
     gap: 40px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .love_container {
@@ -369,6 +373,7 @@ h7 {
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: "Open Sans", sans-serif;
     /*   border: 1px solid black; */
     gap: 40px;
 }
@@ -378,6 +383,7 @@ h7 {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
     /*   border: 1px solid black; */
 }
@@ -387,6 +393,7 @@ h7 {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
     /*   border: 1px solid black; */
 }
@@ -395,6 +402,7 @@ h7 {
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
+    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
 }
 
@@ -405,6 +413,7 @@ h7 {
     font-weight: 700;
     color: #1a3e2f;
     margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
     padding: 0;
     /*   border: 1px solid black; */
 }
