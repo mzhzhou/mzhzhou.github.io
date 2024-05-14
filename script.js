@@ -19,17 +19,19 @@ Make the "Click me!" button move when the visitor clicks it:
 // }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const circle = document.querySelector('.gradient_circle');
-    let dx = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5);  // Change in position along X-axis
-    let dy = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5);  // Change in position along Y-axis
+    const circle = document.querySelector(".gradient_circle");
+    let dx = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5); // Change in position along X-axis
+    let dy = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5); // Change in position along Y-axis
     let x = window.innerWidth / 2;
     let y = 0;
 
     function move() {
-        if (x + dx > window.innerWidth - 200 || x + dx < 0) {  // Check horizontal boundaries
+        if (x + dx > window.innerWidth - 200 || x + dx < 0) {
+            // Check horizontal boundaries
             dx = -dx;
         }
-        if (y + dy > window.innerHeight - 200 || y + dy < 0) {  // Check vertical boundaries
+        if (y + dy > window.innerHeight - 200 || y + dy < 0) {
+            // Check vertical boundaries
             dy = -dy;
         }
         x += dx;
@@ -45,22 +47,46 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("mousemove", function (event) {
-    const circle = document.querySelector('.gradient_circle_pointer');
-    circle.style.transform = `translate3d(${event.clientX - 50}px, ${event.clientY - 50}px, 0)`;
+    const circle = document.querySelector(".gradient_circle_pointer");
+    circle.style.transform = `translate3d(${event.clientX - 50}px, ${event.clientY - 50
+        }px, 0)`;
+    const pointerColor = this.style.getPropertyValue("--pointer-color");
+    circle.style.setProperty("--pointer-color", pointerColor);
     // Adjust the translate3d values by subtracting half the size of the circle to center it on the cursor
 });
 
+function navToProject(url) {
+    window.location.href = url;
+}
+
+// document.querySelectorAll('.project_container').forEach(container => {
+//     const imageUrl = container.getAttribute('data-image-url');
+//     const image = container.querySelector('.hover_image');
+//     image.src = imageUrl;
+// });
+
+// document.querySelectorAll('.project_container').forEach(container => {
+//     container.addEventListener('mouseover', () => {
+//         container.querySelector('.hover_image').style.display = 'block';
+//     });
+//     container.addEventListener('mouseout', () => {
+//         container.querySelector('.hover_image').style.display = 'none';
+//     });
+// });
 
 // ----- GLITCH STARTER PROJECT HELPER CODE -----
 
 // Open file when the link in the preview is clicked
 let goto = (file, line) => {
     window.parent.postMessage(
-        { type: "glitch/go-to-line", payload: { filePath: file, line: line } }, "*"
+        { type: "glitch/go-to-line", payload: { filePath: file, line: line } },
+        "*"
     );
 };
 // Get the file opening button from its class name
 const filer = document.querySelectorAll(".fileopener");
 filer.forEach((f) => {
-    f.onclick = () => { goto(f.dataset.file, f.dataset.line); };
-});
+    f.onclick = () => {
+        goto(f.dataset.file, f.dataset.line);
+    };
+})

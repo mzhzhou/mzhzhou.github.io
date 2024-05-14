@@ -21,8 +21,8 @@ to this section's matching END comment to see page-specific styles.
     --wrapper-height: 87vh;
     --image-max-width: 300px;
     --image-margin: 3rem;
-    --font-family: 'Open Sans', sans-serif;
-    --font-family-header: 'Open Sans', sans-serif;
+    --font-family: "Open Sans", sans-serif;
+    --font-family-header: "Open Sans", sans-serif;
 }
 
 /* Basic page style resets */
@@ -33,7 +33,6 @@ to this section's matching END comment to see page-specific styles.
 [hidden] {
     display: none !important;
 }
-
 
 @font-face {
     font-family: Open Sans;
@@ -59,7 +58,9 @@ to this section's matching END comment to see page-specific styles.
     /* Size of the gradient circle */
     height: 700px;
     /* Size of the gradient circle */
-    background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%, #F5E269 0%, rgba(245, 226, 105, 0.00) 100%);
+    background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%,
+            #f5e269 0%,
+            rgba(245, 226, 105, 0) 100%);
     border-radius: 50%;
     /* Makes it a circle */
     z-index: -2;
@@ -76,7 +77,9 @@ to this section's matching END comment to see page-specific styles.
     position: fixed;
     pointer-events: none;
     /* Ensures the circle doesn't interfere with mouse events */
-    background: radial-gradient(50% 50% at 50% 50%, #C5AAEC 0%, rgba(197, 170, 236, 0.00) 100%);
+    background: radial-gradient(50% 50% at 50% 50%,
+            #c5aaec 0%,
+            rgba(197, 170, 236, 0) 100%);
     transition: transform 0.1s linear;
     /* Smooth transition for better visual effect */
     z-index: 1;
@@ -107,7 +110,7 @@ to this section's matching END comment to see page-specific styles.
 .all_work_container {
     width: 100%;
     margin-top: 50px;
-    /*   border: 1px solid black; */
+    /*     border: 1px solid black; */
 }
 
 .project_container {
@@ -119,7 +122,30 @@ to this section's matching END comment to see page-specific styles.
     margin-left: 40px;
     align-items: flex-end;
     gap: 20px;
-    /*   border: 1px solid black; */
+    position: relative;
+    cursor: pointer;
+    /*     border: 1px solid black; */
+}
+
+.hover_image {
+    position: absolute;
+    width: 400px;
+    /*   height: 300px; */
+    bottom: 100px;
+    right: 0px;
+    display: none;
+    color: black;
+    z-index: 10;
+}
+
+.project_container:hover .hover_image {
+    display: block;
+}
+
+.project_container:hover .gradient_circle_pointer {
+    background: radial-gradient(50% 50% at 50% 50%,
+            var(--pointer-color) 0%,
+            transparent 100%);
 }
 
 .project_des_container {
@@ -137,14 +163,13 @@ to this section's matching END comment to see page-specific styles.
     width: 100%;
     justify-content: center;
     stroke-width: 1px;
-    stroke: var(--Main, #1A3E2F);
+    stroke: var(--Main, #1a3e2f);
     opacity: 0.5;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f5f1ec;
     margin: 20px;
 }
 
@@ -155,6 +180,8 @@ nav {
     color: #1a3e2f;
     padding: 10px 20px;
     width: 100%;
+    position: fixed;
+    top: 20px;
     /*   text-align: center; */
     /*   border: 1px solid black; */
 }
@@ -165,7 +192,6 @@ nav a {
     font-weight: 400;
     margin: 0 10px;
     /*   border: 1px solid black; */
-
 }
 
 .left-links,
@@ -173,7 +199,7 @@ nav a {
 .right-links {
     display: flex;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
     font-weight: 400;
     font-size: 18px;
@@ -181,7 +207,7 @@ nav a {
 }
 
 .nav_text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
     font-weight: 400;
     font-size: 18px;
@@ -197,8 +223,14 @@ nav a {
     justify-centent: flex-end;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 50px;
     font-weight: 400;
     text-align: left;
@@ -210,7 +242,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-size: 30px;
     font-weight: 400;
@@ -222,7 +254,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
     font-weight: 400;
     text-align: right;
@@ -233,7 +265,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
     font-weight: 400;
     opacity: 0.4;
@@ -245,7 +277,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 50px;
     font-weight: 400;
     text-align: left;
@@ -256,7 +288,7 @@ h5 {
 }
 
 h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
     font-weight: 400;
     /*   text-align: left; */
@@ -267,7 +299,7 @@ h6 {
 }
 
 h7 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #1a3e2f;
@@ -275,35 +307,9 @@ h7 {
 }
 
 .footer_text {
-    margin-left: 60px;
+    margin-left: 20px;
     margin-top: 100px;
     margin-bottom: 30px;
-}
-
-/* Navigation grid */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem auto 0;
-    padding: 1rem 0 0.75rem 0;
-    width: 100%;
-    flex-wrap: wrap;
-    border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-    font-family: HK Grotesk;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1rem;
-    color: #000;
-    text-decoration: none;
-    border-style: none;
-}
-
-.footer a:hover {
-    background: var(--color-primary);
 }
 
 .footer .links {
@@ -315,21 +321,136 @@ a:not(.btn--remix):visited {
     padding: 0 1rem;
 }
 
+.image_container {
+    margin-top: 150px;
+    margin-bottom: 80px;
+    /*   border: 1px solid black; */
+}
+
+.profile_pic {
+    width: 400px;
+    margin-left: 0px;
+    /*   border-radius: 200px; */
+    /*   border: 1px solid black; */
+}
+
+.about_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: left;
+    /*   border: 1px solid black; */
+}
+
+.am_love_container {
+    margin-top: 150px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    /*   border: 1px solid black; */
+}
+
+.am_container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*   border: 1px solid black; */
+    gap: 40px;
+}
+
+.love_container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*   border: 1px solid black; */
+    gap: 40px;
+}
+
+.about_1 {
+    width: 380px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #1a3e2f;
+    /*   border: 1px solid black; */
+}
+
+.about_2 {
+    width: 400px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #1a3e2f;
+    /*   border: 1px solid black; */
+}
+
+.about_section {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #1a3e2f;
+}
+
+.about_title {
+    width: auto;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #1a3e2f;
+    margin-bottom: 10px;
+    padding: 0;
+    /*   border: 1px solid black; */
+}
+
+.listen_icon {
+    height: 50px;
+    /*   border: 1px solid black; */
+}
+
+.empower_icon {
+    height: 60px;
+    /*   border: 1px solid black; */
+}
+
+.mundane_icon {
+    height: 50px;
+    /*   border: 1px solid black; */
+}
+
+.road_icon {
+    height: 40px;
+    /*   border: 1px solid black; */
+}
+
+.arch_icon {
+    height: 50px;
+    /*   border: 1px solid black; */
+}
+
+.dance_icon {
+    height: 53px;
+    /*   border: 1px solid black; */
+}
+
 /******************************************************************************
   END Glitch hello-app default styles
   ******************************************************************************/
-
-body {
-    font-family: HK Grotesk;
-    background-color: var(--color-bg);
-}
 
 /* Page structure */
 .wrapper {
     min-height: var(--wrapper-height);
     display: grid;
     place-items: center;
-    margin: 0 1rem;
+    margin: 0;
+    width: 100%;
+    /*   background-color: #F5F1EC; */
 }
 
 .content {
@@ -337,4 +458,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin: 0;
+    /*   background-color: #F5F1EC; */
+    /*   border: 1px solid black; */
 }
