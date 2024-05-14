@@ -129,13 +129,15 @@ to this section's matching END comment to see page-specific styles.
 
 .hover_image {
     position: absolute;
-    width: 200px;
-    /*   height: 300px; */
+    /* max-width: 200px;
+    max-height: 100px; */
     bottom: 100px;
     right: 0px;
     display: none;
     color: black;
     z-index: 10;
+    object-fit: contain;
+    /* overflow: hidden; */
 }
 
 .project_container:hover .hover_image {
@@ -216,7 +218,8 @@ nav a {
 }
 
 .center-links {
-    margin: 0;
+    margin-left: -50px;
+    ;
     /* This centers the Margaret Zhou link */
 }
 
@@ -483,6 +486,10 @@ h7 {
     flex-direction: row;
     background: #8885D6;
     /*   border: 1px solid black; */
+}
+
+smill_render_2 {
+    width: 100%;
 }
 
 .project_details_lane {
