@@ -129,7 +129,7 @@ to this section's matching END comment to see page-specific styles.
 
 .hover_image {
     position: absolute;
-    width: 300px;
+    width: 400px;
     /*   height: 300px; */
     bottom: 100px;
     right: 0px;
@@ -169,8 +169,9 @@ to this section's matching END comment to see page-specific styles.
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #f5f1ec;
+    background-color: #FFF8EB;
     margin: 20px;
+    overflow-x: hidden;
 }
 
 nav {
@@ -321,10 +322,9 @@ h7 {
     padding: 0 1rem;
 }
 
-.prof_container {
+.image_container {
     margin-top: 150px;
     margin-bottom: 80px;
-    width: 400px;
     /*   border: 1px solid black; */
 }
 
@@ -342,7 +342,6 @@ h7 {
     align-content: center;
     justify-content: center;
     align-items: left;
-    font-family: "Open Sans", sans-serif;
     /*   border: 1px solid black; */
 }
 
@@ -352,7 +351,6 @@ h7 {
     display: flex;
     flex-direction: row;
     margin-left: 100px;
-    font-family: "Open Sans", sans-serif;
     /*   border: 1px solid black; */
 }
 
@@ -364,7 +362,6 @@ h7 {
     padding-right: 10px;
     /*   border: 1px solid black; */
     gap: 40px;
-    font-family: "Open Sans", sans-serif;
 }
 
 .love_container {
@@ -373,7 +370,6 @@ h7 {
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: "Open Sans", sans-serif;
     /*   border: 1px solid black; */
     gap: 40px;
 }
@@ -383,7 +379,6 @@ h7 {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
     /*   border: 1px solid black; */
 }
@@ -393,7 +388,6 @@ h7 {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
     /*   border: 1px solid black; */
 }
@@ -402,7 +396,6 @@ h7 {
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
     color: #1a3e2f;
 }
 
@@ -413,7 +406,6 @@ h7 {
     font-weight: 700;
     color: #1a3e2f;
     margin-bottom: 10px;
-    font-family: "Open Sans", sans-serif;
     padding: 0;
     /*   border: 1px solid black; */
 }
@@ -447,6 +439,193 @@ h7 {
     height: 53px;
     /*   border: 1px solid black; */
 }
+
+.project_page_container {
+    width: 103%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    overflow-x: hidden;
+    /*   border: 1px solid black; */
+}
+
+.question_container {
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    border: 0.5px solid var(--Main, #1A3E2F);
+}
+
+.question_text {
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: #1a3e2f;
+    /*   border: 1px solid black; */
+}
+
+.project_details_smill {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background: #8885D6;
+    /*   border: 1px solid black; */
+}
+
+.project_details_lane {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background: #4294F0;
+    /*   border: 1px solid black; */
+}
+
+.project_details_debi {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background: #E2EBFB;
+    /*   border: 1px solid black; */
+}
+
+.project_details_infer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background: #86977A;
+    /*   border: 1px solid black; */
+}
+
+.detail_box {
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    border: 0.5px solid var(--Main, #1A3E2F);
+}
+
+.project_name {
+    font-size: 45px;
+    font-weight: Bold;
+    text-align: center;
+    color: #FFFFFF;
+    /*   border: 1px solid black; */
+}
+
+.project_info {
+    /*   border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.team_container {
+    /*   border: 1px solid black; */
+}
+
+.timeline_container {
+    /*   border: 1px solid black; */
+}
+
+.details_title {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: Bold;
+    color: #FFFFFF;
+    /*   border: 1px solid black; */
+}
+
+.details_info {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    color: #FFFFFF;
+    /*   border: 1px solid black; */
+}
+
+.project_role {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    /*   border: 1px solid black; */
+}
+
+.intro_box {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    border: 0.5px solid var(--Main, #1A3E2F);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background: #FFF8EB;
+}
+
+.intro_text {
+    width: 450px;
+    position: relative;
+    top: 80px;
+    margin-left: 100px;
+}
+
+.project_process_title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    color: #1a3e2f;
+    font-weight: Bold;
+}
+
+.project_process_text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #1a3e2f;
+    margin-top: 30px;
+}
+
+.render_box {
+    width: 100%;
+    height: 950px;
+    border: 0.5px solid var(--Main, #1A3E2F);
+}
+
+.render_image {
+    width: 105%;
+    position: relative;
+    left: -90px;
+}
+
+.problem_svg {
+    position: absolute;
+    top: 250px;
+    left: 510px;
+    width: 1000px;
+}
+
 
 /******************************************************************************
   END Glitch hello-app default styles
