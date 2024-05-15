@@ -601,8 +601,8 @@ h7 {
 .intro_text {
     width: 25%;
     position: relative;
-    top: 80px;
-    margin-left: 100px;
+    top: 60px;
+    margin-left: 90px;
 }
 
 .intro_visual {
@@ -661,6 +661,7 @@ h7 {
     font-size: 45px;
     color: #1a3e2f;
     font-weight: Bold;
+    margin-top: 0px;
 }
 
 .project_process_text {
