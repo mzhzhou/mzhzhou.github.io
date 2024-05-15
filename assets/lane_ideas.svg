@@ -1,26 +1,27 @@
-<svg width="1072" height="698" viewBox="0 0 1072 698" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="716" y="215" width="215" height="355" transform="rotate(-90 716 215)" fill="url(#pattern0_1031_481)" style="mix-blend-mode:darken"/>
-<rect x="357" y="215" width="215" height="359" transform="rotate(-90 357 215)" fill="url(#pattern1_1031_481)" style="mix-blend-mode:darken"/>
-<rect x="4" y="215" width="215" height="353" transform="rotate(-90 4 215)" fill="url(#pattern2_1031_481)" style="mix-blend-mode:darken"/>
+<svg width="1076" height="705" viewBox="0 0 1076 705" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="1075" height="222" fill="#FEF8ED"/>
+<rect x="720" y="222" width="215" height="355" transform="rotate(-90 720 222)" fill="url(#pattern0_1031_481)" style="mix-blend-mode:darken"/>
+<rect x="361" y="222" width="215" height="359" transform="rotate(-90 361 222)" fill="url(#pattern1_1031_481)" style="mix-blend-mode:darken"/>
+<rect x="8" y="222" width="215" height="353" transform="rotate(-90 8 222)" fill="url(#pattern2_1031_481)" style="mix-blend-mode:darken"/>
 <g filter="url(#filter0_d_1031_481)">
-<rect x="7" y="264" width="196.663" height="425.6" rx="20" fill="url(#pattern3_1031_481)" shape-rendering="crispEdges"/>
-<rect x="7.5" y="264.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
+<rect x="11" y="271" width="196.663" height="425.6" rx="20" fill="url(#pattern3_1031_481)" shape-rendering="crispEdges"/>
+<rect x="11.5" y="271.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter1_d_1031_481)">
-<rect x="223.834" y="264" width="196.663" height="425.6" rx="20" fill="url(#pattern4_1031_481)" shape-rendering="crispEdges"/>
-<rect x="224.334" y="264.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
+<rect x="227.834" y="271" width="196.663" height="425.6" rx="20" fill="url(#pattern4_1031_481)" shape-rendering="crispEdges"/>
+<rect x="228.334" y="271.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter2_d_1031_481)">
-<rect x="440.668" y="264" width="196.663" height="425.6" rx="20" fill="url(#pattern5_1031_481)" shape-rendering="crispEdges"/>
-<rect x="441.168" y="264.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
+<rect x="444.668" y="271" width="196.663" height="425.6" rx="20" fill="url(#pattern5_1031_481)" shape-rendering="crispEdges"/>
+<rect x="445.168" y="271.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter3_d_1031_481)">
-<rect x="657.502" y="264" width="196.663" height="425.6" rx="20" fill="url(#pattern6_1031_481)" shape-rendering="crispEdges"/>
-<rect x="658.002" y="264.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
+<rect x="661.502" y="271" width="196.663" height="425.6" rx="20" fill="url(#pattern6_1031_481)" shape-rendering="crispEdges"/>
+<rect x="662.002" y="271.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter4_d_1031_481)">
-<rect x="874.336" y="264" width="196.663" height="425.6" rx="20" fill="url(#pattern7_1031_481)" shape-rendering="crispEdges"/>
-<rect x="874.836" y="264.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
+<rect x="878.336" y="271" width="196.663" height="425.6" rx="20" fill="url(#pattern7_1031_481)" shape-rendering="crispEdges"/>
+<rect x="878.836" y="271.5" width="195.663" height="424.6" rx="19.5" stroke="black" shape-rendering="crispEdges"/>
 </g>
 <defs>
 <pattern id="pattern0_1031_481" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -32,7 +33,7 @@
 <pattern id="pattern2_1031_481" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image2_1031_481" transform="matrix(0.000823582 0 0 0.000502127 -0.263401 -0.0547719)"/>
 </pattern>
-<filter id="filter0_d_1031_481" x="0" y="264" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_1031_481" x="4" y="271" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-3" dy="4"/>
@@ -45,7 +46,7 @@
 <pattern id="pattern3_1031_481" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image3_1031_481" transform="scale(0.00128205 0.000592417)"/>
 </pattern>
-<filter id="filter1_d_1031_481" x="216.834" y="264" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_1031_481" x="220.834" y="271" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-3" dy="4"/>
@@ -58,7 +59,7 @@
 <pattern id="pattern4_1031_481" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image4_1031_481" transform="scale(0.00128205 0.000592417)"/>
 </pattern>
-<filter id="filter2_d_1031_481" x="433.668" y="264" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_d_1031_481" x="437.668" y="271" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-3" dy="4"/>
@@ -71,7 +72,7 @@
 <pattern id="pattern5_1031_481" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image5_1031_481" transform="scale(0.00128205 0.000592417)"/>
 </pattern>
-<filter id="filter3_d_1031_481" x="650.502" y="264" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter3_d_1031_481" x="654.502" y="271" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-3" dy="4"/>
@@ -84,7 +85,7 @@
 <pattern id="pattern6_1031_481" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image6_1031_481" transform="scale(0.00128205 0.000592417)"/>
 </pattern>
-<filter id="filter4_d_1031_481" x="867.336" y="264" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter4_d_1031_481" x="871.336" y="271" width="204.664" height="433.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-3" dy="4"/>
