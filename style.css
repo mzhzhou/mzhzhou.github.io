@@ -91,12 +91,12 @@ to this section's matching END comment to see page-specific styles.
     align-items: left;
     text-align: left;
     display: block;
-    margin-top: 170px;
+    margin-top: 180px;
     /*   border: 1px solid black; */
 }
 
 .subtitle_container {
-    margin-top: 550px;
+    margin-top: 580px;
     width: 60%;
     align-items: right;
     justify-content: right;
@@ -114,12 +114,12 @@ to this section's matching END comment to see page-specific styles.
 }
 
 .project_container {
-    width: calc(100% - 80px);
+    width: calc(100% - 100px);
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
     align-items: flex-end;
     gap: 20px;
     position: relative;
@@ -293,7 +293,7 @@ h5 {
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    margin: 50px;
+    margin: 60px;
     /*   font-family: "Open Sans"; */
 }
 
