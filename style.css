@@ -67,6 +67,11 @@ to this section's matching END comment to see page-specific styles.
     /*   animation: moveGradient 50s infinite alternate; /* Animation */
 }
 
+img {
+    max-width: 110%;
+    height: auto;
+}
+
 .gradient_circle_pointer {
     width: 50px;
     /* Adjust size as needed */
@@ -594,9 +599,11 @@ h7 {
     text-align: left;
     display: flex;
     padding-top: 80px;
+    padding-left: 90px;
     padding-bottom: 80px;
     /* align-items: flex-end; */
     flex-direction: space-between;
+    gap: 5%;
     background: #FFF8EB;
 }
 
@@ -604,16 +611,18 @@ h7 {
     width: 25%;
     position: relative;
     /* top: 60px; */
-    margin-left: 90px;
+    /* margin-left: 90px; */
     /* margin-bottom: 150px; */
 }
 
 .intro_visual {
-    width: 75%;
+    max-width: 75%;
+    height: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
+    align-items: flex-end;
     /* border: 1px solid black; */
 }
 
