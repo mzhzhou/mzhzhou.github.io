@@ -189,6 +189,10 @@ nav {
     /*   border: 1px solid black; */
 }
 
+a {
+    color: #1a3e2f;
+}
+
 nav a {
     color: #1a3e2f;
     text-decoration: none;
