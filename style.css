@@ -1100,7 +1100,7 @@ h7 {
     .footer_text {
         text-align: center;
         /* Center align footer text */
-        margin: 20px 0;
+        margin: 20px 30px;
         position: relative;
         /* Adjust margin */
     }
