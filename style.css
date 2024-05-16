@@ -137,12 +137,27 @@ img {
     /* max-width: 200px;
     max-height: 100px; */
     bottom: 100px;
+    height: auto;
+    width: auto;
     right: 0px;
     display: none;
     color: black;
     z-index: 10;
     object-fit: contain;
     /* overflow: hidden; */
+    border-radius: 30px;
+    /* border: 1px solid #1a3e2f; */
+    /* clip-path: border-box; */
+}
+
+.hover_image img {
+    /* width: auto; */
+    height: auto;
+    object-fit: fill;
+    /* Ensures the image fills the container */
+    /* Adjust coordinates as per your requirement */
+    border-radius: 25px;
+    /* clip-path: inset(1px); */
 }
 
 .project_container:hover .hover_image {
@@ -596,7 +611,7 @@ h7 {
 }
 
 .project_name {
-    font-size: 45px;
+    font-size: 55px;
     font-weight: Bold;
     text-align: center;
     color: #FFFFFF;
@@ -771,18 +786,23 @@ h7 {
 }
 
 .render_box {
-    width: 100%;
+    width: 103%;
     height: auto;
-    /* border: 0.5px solid var(--Main, #1A3E2F); */
+    border: 0.5px solid var(--Main, #1A3E2F);
+    position: relative;
+    margin-top: -1px;
 }
 
 .render_image {
-    /* width: 105%; */
     height: 100%;
+    /* justify-content: center;
+    align-items: center; */
     position: relative;
+    margin-bottom: -4px;
     /* left: -90px; */
     /* margin: -10px; */
     padding: 0;
+    /* border: 0.5px solid var(--Main, #1A3E2F); */
 }
 
 .problem_svg {
@@ -984,7 +1004,7 @@ h7 {
         position: absolute;
         /* max-width: 200px;
             max-height: 100px; */
-        bottom: 220px;
+        bottom: 120%;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -1090,7 +1110,7 @@ h7 {
     .render_image {
         width: 100%;
         /* Ensure image takes full width */
-        height: auto;
+        height: calc(auto + 2px);
         /* Allow image height to adjust */
     }
 
