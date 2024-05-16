@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let dx = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5); // Change in position along X-axis
     let dy = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5); // Change in position along Y-axis
     let x = window.innerWidth / 2;
-    let y = 0;
+    let y = window.innerHeight / 2;
 
     function move() {
         if (x + dx > window.innerWidth - 200 || x + dx < 0) {
@@ -53,6 +53,24 @@ document.addEventListener("mousemove", function (event) {
     const pointerColor = this.style.getPropertyValue("--pointer-color");
     circle.style.setProperty("--pointer-color", pointerColor);
     // Adjust the translate3d values by subtracting half the size of the circle to center it on the cursor
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+    const projectContainers = document.querySelectorAll('.project_container');
+
+    projectContainers.forEach(container => {
+        container.addEventListener('touchstart', function (event) {
+            event.preventDefault(); // Prevent default touch behavior
+            const touchTimer = setTimeout(function () {
+                // Simulate tap and hold action
+                container.classList.add('hovered');
+            }, 500); // Adjust the duration as needed
+
+            container.addEventListener('touchend', function () {
+                clearTimeout(touchTimer); // Cancel tap and hold action if touch is released
+            });
+        });
+    });
 });
 
 function navToProject(url) {
