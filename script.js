@@ -55,23 +55,23 @@ document.addEventListener("mousemove", function (event) {
     // Adjust the translate3d values by subtracting half the size of the circle to center it on the cursor
 });
 
-window.addEventListener('DOMContentLoaded', function () {
-    const projectContainers = document.querySelectorAll('.project_container');
+// window.addEventListener('DOMContentLoaded', function () {
+//     const projectContainers = document.querySelectorAll('.project_container');
 
-    projectContainers.forEach(container => {
-        container.addEventListener('touchstart', function (event) {
-            event.preventDefault(); // Prevent default touch behavior
-            const touchTimer = setTimeout(function () {
-                // Simulate tap and hold action
-                container.classList.add('hovered');
-            }, 500); // Adjust the duration as needed
+//     projectContainers.forEach(container => {
+//         container.addEventListener('touchstart', function (event) {
+//             event.preventDefault(); // Prevent default touch behavior
+//             const touchTimer = setTimeout(function () {
+//                 // Simulate tap and hold action
+//                 container.classList.add('hovered');
+//             }, 500); // Adjust the duration as needed
 
-            container.addEventListener('touchend', function () {
-                clearTimeout(touchTimer); // Cancel tap and hold action if touch is released
-            });
-        });
-    });
-});
+//             container.addEventListener('touchend', function () {
+//                 clearTimeout(touchTimer); // Cancel tap and hold action if touch is released
+//             });
+//         });
+//     });
+// });
 
 function navToProject(url) {
     window.location.href = url;
