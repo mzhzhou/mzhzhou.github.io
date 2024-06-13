@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("mousemove", function (event) {
     const circle = document.querySelector(".gradient_circle_pointer");
-    circle.style.transform = `translate3d(${event.clientX - 165}px, ${event.clientY - 30
+    circle.style.transform = `translate3d(${event.clientX - 25}px, ${event.clientY - 25
         }px, 0)`;
     const pointerColor = this.style.getPropertyValue("--pointer-color");
     circle.style.setProperty("--pointer-color", pointerColor);
