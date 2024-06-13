@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Check horizontal boundaries
             dx = -dx;
         }
-        if (y + dy > window.innerHeight - 200 || y + dy < 0) {
+        if (y + dy > 850 || y + dy < 80) {
             // Check vertical boundaries
             dy = -dy;
         }
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("mousemove", function (event) {
     const circle = document.querySelector(".gradient_circle_pointer");
-    circle.style.transform = `translate3d(${event.clientX - 50}px, ${event.clientY - 50
+    circle.style.transform = `translate3d(${event.clientX - 165}px, ${event.clientY - 30
         }px, 0)`;
     const pointerColor = this.style.getPropertyValue("--pointer-color");
     circle.style.setProperty("--pointer-color", pointerColor);
