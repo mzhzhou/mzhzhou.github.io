@@ -20,18 +20,16 @@ Make the "Click me!" button move when the visitor clicks it:
 
 document.addEventListener("DOMContentLoaded", function () {
     const circle = document.querySelector(".gradient_circle");
-    let dx = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5); // Change in position along X-axis
-    let dy = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 3 + 0.5); // Change in position along Y-axis
+    let dx = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 2 + 0.5); // Change in position along X-axis
+    let dy = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 2 + 0.5); // Change in position along Y-axis
     let x = window.innerWidth / 2;
     let y = window.innerHeight / 2;
 
     function move() {
         if (x + dx > window.innerWidth - 200 || x + dx < 0) {
-            // Check horizontal boundaries
             dx = -dx;
         }
         if (y + dy > 850 || y + dy < 80) {
-            // Check vertical boundaries
             dy = -dy;
         }
         x += dx;
