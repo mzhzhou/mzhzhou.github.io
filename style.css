@@ -123,32 +123,66 @@ img {
 .all_work_container {
     width: 100%;
     display: flex;
-    max-width: 1700px;
+    max-width: 1600px;
     margin-top: 70px;
     margin-bottom: 70px;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    column-gap: 50px;
+    column-gap: 20px;
     row-gap: 70px;
 
     /*     border: 1px solid black; */
 }
 
+.project_backing {
+    border: 1px solid #F1F1F1;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.project_backing:hover {
+    animation: wiggle 0.3s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(-1deg);
+    }
+
+    75% {
+        transform: rotate(0.5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .project_container {
-    width: 600px;
+    width: 500px;
     min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
     align-items: left;
     gap: 18px;
     position: relative;
-    cursor: pointer;
-    /*     border: 1px solid black; */
+    /* cursor: pointer; */
+    /* border: 1px solid black; */
 }
 
 .hover_image {
@@ -374,10 +408,13 @@ h7 {
 }
 
 .footer_text {
-    margin-left: 20px;
-    margin-top: 100px;
+    /* margin-left: 20px; */
+    /* margin-top: 100px; */
     margin-bottom: 30px;
     bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     position: relative;
     /* z-index: 10; */
 }
@@ -597,6 +634,16 @@ h7 {
     /*   border: 1px solid black; */
 }
 
+.project_details_culinaid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background: #27A500; */
+    /*   border: 1px solid black; */
+}
+
 .detail_box {
     width: calc((100% / 3) + 1px);
     min-width: 300px;
@@ -642,6 +689,23 @@ h7 {
     display: flex;
     flex-wrap: wrap;
     background: #86977A;
+    z-index: 5;
+    border: 0.5px solid var(--Main, #61726B);
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.detail_box_culinaid {
+    width: calc((100% / 3) + 1px);
+    min-width: 300px;
+    height: 400px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background: #27A500;
     z-index: 5;
     border: 0.5px solid var(--Main, #61726B);
     margin-top: -1px;
@@ -1077,6 +1141,10 @@ h7 {
         width: 100%;
     }
 
+    .detail_box_culinaid {
+        width: 100%;
+    }
+
     .intro_text {
         width: 100%;
         font-size: 20px;
@@ -1247,7 +1315,9 @@ footer {
     /* position: absolute;
     bottom: 0px; */
     margin-top: auto;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     /* flex-shrink: 0; */
     /* border: 1px solid black; */
     /* pushes the footer to the bottom */
