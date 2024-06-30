@@ -179,7 +179,7 @@ img {
     margin-left: 50px;
     margin-right: 50px;
     align-items: left;
-    gap: 18px;
+    gap: 15px;
     position: relative;
     /* cursor: pointer; */
     /* border: 1px solid black; */
@@ -221,6 +221,26 @@ img {
     background: radial-gradient(50% 50% at 50% 50%,
             var(--pointer-color) 0%,
             transparent 100%);
+}
+
+.project_tags_container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.project_tag {
+    border: 1px solid #F1F1F1;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FFF8EB;
+    color: #1a3e2f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
 .project_des_container {
@@ -331,11 +351,11 @@ p {
 
 h1 {
     font-family: "Open Sans", sans-serif;
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 400;
     text-align: left;
     color: #1a3e2f;
-    line-height: 28px;
+    line-height: 18px;
     font-weight: bold;
     margin: 0;
     /*   font-family: "Open Sans"; */
@@ -367,7 +387,7 @@ h3 {
 
 h4 {
     font-family: "Open Sans", sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
     opacity: 0.4;
     text-align: left;
