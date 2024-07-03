@@ -62,7 +62,7 @@ to this section's matching END comment to see page-specific styles.
     top: 0;
     justify-content: space-between;
     align-items: top;
-    width: 100%;
+    width: auto;
     height: 950px;
     /*   border: 1px solid black; */
 }
@@ -142,7 +142,7 @@ img {
     width: 100%;
     display: flex;
     max-width: 1600px;
-    margin-top: 9ch;
+    margin-top: 90px;
     margin-bottom: 70px;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -155,7 +155,7 @@ img {
 .project_backing {
     border: 1px solid #F1F1F1;
     border-radius: 30px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
 
@@ -233,6 +233,10 @@ img {
 
 .project_container:hover .hover_image {
     display: block;
+}
+
+.project_home_image {
+    border-radius: 20px;
 }
 
 .project_container:hover .gradient_circle_pointer {
@@ -824,9 +828,9 @@ h7 {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    padding-top: 80px;
+    padding-top: 60px;
     padding-left: 90px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     padding-right: 90px;
     justify-content: space-between;
     gap: 40px;
@@ -1009,6 +1013,21 @@ h7 {
 
 @media only screen and (max-width: 900px) {
 
+    .gradient_circle {
+        content: "";
+        position: absolute;
+        margin-top: -350px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: 300px;
+        background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%,
+                #96BAFF 0%,
+                rgba(150, 186, 255, 0.00) 100%);
+        border-radius: 50%;
+        z-index: -2;
+    }
+
     .gradient_circle_pointer {
         /* width: 50px;
         /* Adjust size as needed */
@@ -1025,7 +1044,6 @@ h7 {
         transition: transform 0.1s linear;
         /* Smooth transition for better visual effect */
         z-index: -10;
-        */
     }
 
     /* 
@@ -1075,9 +1093,18 @@ h7 {
     /* } */
 
     .header_container {
-        padding: 0px;
+        padding-left: 0px;
+        display: flex;
         max-width: 1700px;
+        min-width: 500px;
         flex-wrap: wrap;
+        justify-content: left;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .title_container {
+        margin-left: 0px;
     }
 
     .title_container h5 {
@@ -1269,6 +1296,7 @@ h7 {
     }
 
     .content {
+        display: flex;
         flex-wrap: wrap;
     }
 
