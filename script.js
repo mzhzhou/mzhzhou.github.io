@@ -76,6 +76,15 @@ function navToProject(url) {
     window.location.href = url;
 }
 
+function toggleMenu() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    if (dropdownMenu.style.display === 'flex') {
+        dropdownMenu.style.display = 'none';
+    } else {
+        dropdownMenu.style.display = 'flex';
+    }
+}
+
 // document.querySelectorAll('.project_container').forEach(container => {
 //     const imageUrl = container.getAttribute('data-image-url');
 //     const image = container.querySelector('.hover_image');
