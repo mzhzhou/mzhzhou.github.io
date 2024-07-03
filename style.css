@@ -68,6 +68,7 @@ to this section's matching END comment to see page-specific styles.
 }
 
 .gradient_circle {
+    display: block;
     content: "";
     position: absolute;
     margin-top: -350px;
@@ -139,16 +140,16 @@ img {
 }
 
 .all_work_container {
-    width: 100%;
+    width: auto;
     display: flex;
     max-width: 1600px;
+    /* min-width: 1000px; */
     margin-top: 90px;
     margin-bottom: 70px;
     flex-flow: row wrap;
     justify-content: space-evenly;
     column-gap: 20px;
     row-gap: 70px;
-
     /*     border: 1px solid black; */
 }
 
@@ -1053,14 +1054,15 @@ h7 {
         position: absolute;
         margin-top: -350px;
         left: 50%;
-        transform: translateX(-50%);
-        width: 300px;
-        height: 300px;
+        transform: none;
+        width: 100px;
+        height: 100px;
         background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%,
                 #96BAFF 0%,
                 rgba(150, 186, 255, 0.00) 100%);
         border-radius: 50%;
         z-index: -2;
+        display: none;
     }
 
     .gradient_circle_pointer {
@@ -1101,7 +1103,7 @@ h7 {
         padding-left: 0px;
         display: flex;
         max-width: 1700px;
-        min-width: 500px;
+        min-width: 50px;
         flex-wrap: wrap;
         justify-content: left;
         height: auto;
@@ -1110,7 +1112,7 @@ h7 {
     }
 
     .title_container {
-        margin-left: 0px;
+        width: 70%;
     }
 
     .title_container h5 {
@@ -1123,17 +1125,23 @@ h7 {
         margin-top: 50px;
         font-size: 14px;
         width: 90%;
-        margin-left: -10px;
+        /* margin-left: -10px; */
     }
 
     .subtitle_container h6 {
         font-size: 30px;
     }
 
+    .all_work_container {
+        width: auto;
+        min-width: 50px;
+        justify-content: left;
+        column-gap: 0px;
+    }
+
     .project_container {
         width: auto;
-        height: auto;
-        min-width: 200px;
+        min-width: 50px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -1147,14 +1155,30 @@ h7 {
         margin-right: 40px;
     }
 
+    .project_home_image {
+        width: auto;
+        height: auto;
+        min-width: 50px;
+    }
+
     .project_backing {
         margin-left: 40px;
         margin-right: 40px;
+        width: auto;
+        height: auto;
+        min-width: 50px;
     }
 
     .project_backing:hover {
         animation: none;
         /* animation-iteration-count: 1; */
+    }
+
+    .project_tags_container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 5px;
     }
 
     .project_container h1 {
@@ -1304,6 +1328,7 @@ h7 {
     .content {
         display: flex;
         flex-wrap: wrap;
+        justify-content: left;
     }
 
     .project_page_container {
@@ -1421,7 +1446,7 @@ h7 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: 100%;
     margin: 0 auto;
