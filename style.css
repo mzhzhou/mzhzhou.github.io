@@ -1384,6 +1384,15 @@ h7 {
         text-align: center;
     }
 
+    .about_container {
+        flex-direction: column;
+    }
+
+    .am_love_container {
+        flex-direction: column;
+        gap: 150px;
+    }
+
     .footer_text {
         text-align: center;
         /* Center align footer text */
