@@ -63,7 +63,7 @@ to this section's matching END comment to see page-specific styles.
     justify-content: space-between;
     align-items: top;
     width: auto;
-    height: 950px;
+    height: auto;
     /*   border: 1px solid black; */
 }
 
@@ -122,6 +122,7 @@ img {
 
 .subtitle_container {
     margin-top: 580px;
+    margin-bottom: 50px;
     width: 60%;
     align-items: right;
     justify-content: right;
@@ -305,7 +306,7 @@ nav {
     top: 0px;
     z-index: 20;
     /*   text-align: center; */
-    /*   border: 1px solid black; */
+    /* border: 1px solid black; */
 }
 
 .index_page nav {
@@ -317,9 +318,10 @@ nav {
     padding: 10px 20px;
     width: 100%;
     height: 80px;
-    position: fixed;
+    position: relative;
     top: 0px;
     z-index: 20;
+    /* border: 1px solid black; */
 }
 
 a {
@@ -333,7 +335,7 @@ nav a {
     margin: 0 10px;
     /* margin-top: 10px; */
     z-index: 20;
-    /*   border: 1px solid black; */
+    /* border: 1px solid black; */
 }
 
 .left-links,
@@ -358,7 +360,6 @@ nav a {
 
 .center-links {
     margin-left: -50px;
-    ;
     /* This centers the Margaret Zhou link */
 }
 
@@ -381,7 +382,7 @@ nav a {
 .dropdown-menu a {
     padding: 12px 16px;
     text-decoration: none;
-    color: black;
+    color: #1a3e2f;
 }
 
 .dropdown-menu a:hover {
@@ -395,7 +396,7 @@ nav a {
 }
 
 .menu-toggle span {
-    background-color: black;
+    background-color: #1a3e2f;
     height: 3px;
     margin: 4px 0;
     width: 25px;
@@ -921,6 +922,7 @@ h7 {
     /* border: 0.5px solid var(--Main, #1A3E2F); */
     border: 1px solid var(--Main, #61726B);
     margin-top: -1px;
+    margin-left: 1px;
     text-align: center;
     align-items: center;
     /* justify-content: center; */
@@ -1047,7 +1049,7 @@ h7 {
     margin-top: 0;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
 
     .gradient_circle {
         content: "";
@@ -1260,9 +1262,10 @@ h7 {
     }
 
     .proposal_text {
-        padding: 10px 10px;
+        padding: 0px 0px;
+        width: auto;
+        min-width: 50px;
     }
-
 
     .detail_box {
         width: 100%;
@@ -1281,10 +1284,11 @@ h7 {
     }
 
     .intro_text {
-        width: 100%;
+        width: auto;
         font-size: 20px;
         text-align: left;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
+        min-width: 50px;
     }
 
     .intro_visual {
@@ -1310,6 +1314,8 @@ h7 {
     .intro_box {
         width: 100%;
         padding: 40px 20px;
+        margin-left: 1px;
+        margin-top: -1px;
         align-items: center;
         align-content: center;
         justify-content: center;
@@ -1318,7 +1324,14 @@ h7 {
 
     .question_text {
         font-size: 28px;
+        width: auto;
+        min-width: 50px;
+
         /* Decrease font size for smaller screens */
+    }
+
+    .question_container {
+        padding: 40px;
     }
 
     .project_process_text {
@@ -1341,32 +1354,32 @@ h7 {
     }
 
     .proposal_box {
-        margin: 0;
-        padding-left: 0px;
-        gap: 30px;
+        width: 100%;
+        padding: 10px 20px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .proposal_text_box {
-        padding: 0px 10px;
+        padding: 0px 0px;
+        margin-top: 30px;
+        height: auto;
+        width: 100%%;
+        min-width: 50px;
     }
 
     .proposal_section {
         padding: 20px;
     }
 
-    .proposal_text {
-        width: 100%;
-        margin: 0;
-    }
-
     .project_process_title {
         font-size: 30px;
+        width: auto;
+        min-width: 50px;
         /* Decrease font size for smaller screens */
-    }
-
-    .proposal_text_box {
-        margin-top: 30px;
-        height: auto;
     }
 
     .project_proposal_title {
@@ -1385,28 +1398,47 @@ h7 {
     .project_proposal_text {
         font-size: 15px;
         margin-bottom: 20px;
+        min-width: 50px;
         /* Decrease font size for smaller screens */
     }
 
     .proposal_video {
+        height: auto;
         margin-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     .render_image {
         width: 100%;
         /* Ensure image takes full width */
         height: calc(auto + 2px);
+        margin-left: 1px;
         /* Allow image height to adjust */
     }
 
     .smill_render_2 {
         width: 100%;
         margin-left: 0px;
-        left: -40px;
+        left: 0px;
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .proposal_visual {
+        min-width: 50px;
+        width: 100%;
+        justify-content: center;
+        border-radius: 0px;
+        /* border: 1px solid rgba(0, 0, 0, 0.20); */
+    }
+
+    .feature {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 0;
     }
 
     .about_container {
