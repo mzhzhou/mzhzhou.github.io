@@ -78,10 +78,10 @@ function navToProject(url) {
 
 function toggleMenu() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
-    if (dropdownMenu.style.display === 'flex') {
-        dropdownMenu.style.display = 'none';
-    } else {
+    if (dropdownMenu.style.display === 'none') {
         dropdownMenu.style.display = 'flex';
+    } else {
+        dropdownMenu.style.display = 'none';
     }
 }
 
