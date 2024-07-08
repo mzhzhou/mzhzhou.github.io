@@ -47,12 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("mousemove", function (event) {
     const circle = document.querySelector(".gradient_circle_pointer");
-    circle.style.transform = `translate3d(${event.clientX - 25}px, ${event.clientY - 25
-        }px, 0)`;
-    const pointerColor = this.style.getPropertyValue("--pointer-color");
+    const pointerColor = window.getComputedStyle(document.documentElement).getPropertyValue("--pointer-color");
+
+    // Set the circle's position to be centered on the cursor
+    circle.style.left = `${event.clientX}px`;
+    circle.style.top = `${event.clientY}px`;
+
+    // Optional: Update the pointer color if needed
     circle.style.setProperty("--pointer-color", pointerColor);
-    // Adjust the translate3d values by subtracting half the size of the circle to center it on the cursor
 });
+
+
 
 // window.addEventListener('DOMContentLoaded', function () {
 //     const projectContainers = document.querySelectorAll('.project_container');
