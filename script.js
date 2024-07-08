@@ -49,9 +49,12 @@ document.addEventListener("mousemove", function (event) {
     const circle = document.querySelector(".gradient_circle_pointer");
     const pointerColor = window.getComputedStyle(document.documentElement).getPropertyValue("--pointer-color");
 
-    // Set the circle's position to be centered on the cursor
-    circle.style.left = `${event.clientX}px`;
-    circle.style.top = `${event.clientY}px`;
+    // Set the circle's position to be centered on the cursor, accounting for scroll position
+    const scrollX = window.pageXOffset || document.documentElement.scrollLeft;
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+    circle.style.left = `${event.clientX + scrollX}px`;
+    circle.style.top = `${event.clientY + scrollY}px`;
 
     // Optional: Update the pointer color if needed
     circle.style.setProperty("--pointer-color", pointerColor);
