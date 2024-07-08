@@ -870,9 +870,9 @@ h7 {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    padding-top: 60px;
+    padding-top: 55px;
     padding-left: 90px;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
     padding-right: 90px;
     justify-content: space-between;
     gap: 40px;
@@ -1016,7 +1016,7 @@ h7 {
     line-height: 23px;
     color: #1a3e2f;
     margin-top: 30px;
-    margin-bottom: 120px;
+    /* margin-bottom: 20px; */
 }
 
 .render_box {
