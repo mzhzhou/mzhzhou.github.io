@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Margaret Zhou</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+    <script src="/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="index_page">
+    <div class="wrapper">
+        <div class="content" role="main">
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="dropdown-menu">
+                    <a class="nav_text" href="about.html">About</a>
+                    <a class="nav_text"
+                        href="https://drive.google.com/file/d/17GJd-XpKb-PKOvbUqNkxbteEWIFa56gf/view?usp=sharing"
+                        target="_blank">Resume</a>
+                    <a class="nav_text" href="#">Work</a>
+                </div>
+                <div class="left-links">
+                    <a class="nav_text" href="about.html">About</a>
+                    <a class="nav_text"
+                        href="https://drive.google.com/file/d/17GJd-XpKb-PKOvbUqNkxbteEWIFa56gf/view?usp=sharing"
+                        target="_blank">Resume</a>
+                </div>
+                <div class="center-links">
+                    <a class="nav_text" href="#">Margaret Zhou</a>
+                </div>
+                <div class="right-links">
+                    <a class="nav_text" href="#">Work</a>
+                </div>
+            </nav>
+
+            <div class="header_container">
+                <div class="gradient_circle_pointer"></div>
+                <div class="title_container">
+                    <div class="gradient_circle"></div>
+                    <h5>
+                        Trial
+                    </h5>
+                </div>
+                <div class="subtitle_container">
+                    <h6>
+                        Studied Product Design, AI, and HCI at <a href="https://mde.harvard.edu/">Harvard
+                            University</a>
+                    </h6>
+                    <h6>Previously an intern at <a href="https://deepmind.google/">Google Deepmind</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="all_work_container_center">
+                <div class="all_work_container">
+                    <div class="project_backing" onclick="navToProject('smill.html')">
+                        <div class="project_container" style="--pointer-color: #8885D6;">
+                            <h1>Smill</h1>
+                            <h4>remote dental health kit for unhoused communities</h4>
+                            <img class="project_home_image" src="assets/smill.svg" display: none;>
+                            <!-- <h3>Product, UI/UX, 3D</h3> -->
+                            <div class="project_tags_container">
+                                <div class="project_tag">
+                                    Product
+                                </div>
+                                <div class="project_tag">
+                                    UI/UX
+                                </div>
+                                <div class="project_tag">
+                                    3D
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_backing" onclick="navToProject('lane.html')">
+                        <div class="project_container" style="--pointer-color: #4294F0;">
+                            <h1>Lane</h1>
+                            <h4>navigation system for pedestrians with spatial anxiety</h4>
+                            <img class="project_home_image" src="assets/lane.svg" display: none;>
+                            <!-- <h3>UI/UX, React Native</h3> -->
+                            <div class="project_tags_container">
+                                <div class="project_tag">
+                                    Thesis
+                                </div>
+                                <div class="project_tag">
+                                    Product
+                                </div>
+                                <div class="project_tag">
+                                    UI/UX
+                                </div>
+                                <div class="project_tag">
+                                    React Native
+                                </div>
+                            </div>
+                            <div class="hover_image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project_container" style="--pointer-color: #E2EBFB;"
+                        onclick="navToProject('debi.html')">
+                        <h1>Echo</h1>
+                        <div class="project_des_container">
+                            <h4>LLM bias identification for K-12 education</h4>
+                            <h3>UI/UX, React, AI/ML</h3>
+                        </div>
+                        <div class="hover_image">
+                            <img src="assets/debi.svg" display: none;>
+                        </div>
+                    </div>
+                    <hr class="line_100" /> -->
+                    <div class="project_backing" onclick="navToProject('infernodes.html')">
+                        <div class="project_container" style="--pointer-color: #86977A;">
+                            <h1>Infernodes</h1>
+                            <h4>wildfire-fighting remote communication</h4>
+                            <img class="project_home_image" src="assets/infer.svg" display: none;>
+                            <!-- <h3>Product, IoT, UI/UX</h3> -->
+                            <div class="project_tags_container">
+                                <div class="project_tag">
+                                    Product
+                                </div>
+                                <div class="project_tag">
+                                    UI/UX
+                                </div>
+                                <div class="project_tag">
+                                    IoT
+                                </div>
+                            </div>
+                            <div class="hover_image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="project_container" style="--pointer-color: #8885D6;"
+                        onclick="navToProject('emsi.html')">
+                        <h1>EMSI</h1>
+                        <div class="project_des_container">
+                            <h4>spatial interaction</h4>
+                            <h3>Research, Computer Vision, Javascript</h3>
+                        </div>
+                        <div class="hover_image">
+                            <img src="assets/emsi.svg" display: none;>
+                        </div>
+                    </div>
+                    <hr class="line_100" /> -->
+                    <div class="project_backing" onclick="navToProject('culinaid.html')">
+                        <div class="project_container" style="--pointer-color: #86977A;">
+                            <h1>Culinaid</h1>
+                            <h4>recipe co-generation for home cooks</h4>
+                            <img class="project_home_image" src="assets/culinaid.svg" display: none;>
+                            <!-- <h3>UI/UX, AI/ML, React</h3> -->
+                            <div class="project_tags_container">
+                                <div class="project_tag">
+                                    UI/UX
+                                </div>
+                                <div class="project_tag">
+                                    AI/ML
+                                </div>
+                                <div class="project_tag">
+                                    React
+                                </div>
+                                <div class="project_tag">
+                                    HCI Research
+                                </div>
+                            </div>
+                            <div class="hover_image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_text">
+            <h7>© margaret zhou</h7>
+        </div>
+    </footer>
+</body>
+
+</html>
