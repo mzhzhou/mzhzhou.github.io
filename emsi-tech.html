@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="/style-tech.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content" role="main">
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="dropdown-menu">
+                    <a class="nav_text" href="about.html">About</a>
+                    <a class="nav_text"
+                        href="https://drive.google.com/file/d/17GJd-XpKb-PKOvbUqNkxbteEWIFa56gf/view?usp=sharing"
+                        target="_blank">Resume</a>
+                    <a class="nav_text" href="index.html">Work</a>
+                </div>
+                <div class="left-links">
+                    <a class="nav_text" href="about.html">About</a>
+                    <a class="nav_text"
+                        href="https://drive.google.com/file/d/17GJd-XpKb-PKOvbUqNkxbteEWIFa56gf/view?usp=sharing"
+                        target="_blank">Resume</a>
+                </div>
+                <div class="center-links">
+                    <a class="nav_text_tech" href="index-tech.html">
+                        <img class="site_logo" src="assets/icon_logo_b.svg">
+                    </a>
+                </div>
+                <div class="right-links">
+                    <a class="nav_text" href="index-tech.html">Work</a>
+                </div>
+            </nav>
+
+            <div class="project_page_container">
+                <!-- <div class="gradient_circle_pointer"></div> -->
+                <div class="question_container">
+                    <div class="question_text">
+                        Understanding Space through Movement and Computer Vision
+                    </div>
+                </div>
+                <div class="project_details_emsi">
+                    <div class="detail_box_emsi">
+                        <div class="project_name_grey">Emsi</div>
+                    </div>
+                    <div class="detail_box_emsi">
+                        <div class="project_info">
+                            <div class="team_container">
+                                <div class="details_title_grey">Team:</div>
+                                <div class="details_info_grey">
+                                    Myself, Advised by Jose Luis Garcia
+                                </div>
+                            </div>
+                            <div class="timeline_container">
+                                <div class="details_title_grey">Timeline:</div>
+                                <div class="details_info_grey">Thesis</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_box_emsi">
+                        <div class="project_role">
+                            <div class="details_title_grey">My Role:</div>
+                            <div class="details_info_grey">
+                                Research, UI/UX Design, Front-end and Back-end Engineering
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <a class="project_process_title" style="font-size: 30px;"
+                            href="https://papers.cumincad.org/data/works/att/caadria2022_297.pdf">Link to Full Paper</a>
+                    </div>
+                    <div class="intro_text">
+                        <a class="project_process_title" style="font-size: 30px;"
+                            href="https://docs.google.com/presentation/d/1gWBousDUQqlLSSDQvGNw7G9oIlnZdXLU82aFB6qbnpQ/edit?usp=sharing">Link
+                            to Paper Presentation</a>
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">Introduction</div>
+                        <div class="project_process_text">
+                            This project was initiated from thinking about what it means to use space, and what spatial
+                            interaction implies. How has our understanding and data collection of how humans use space
+                            changed since the work of William H. Whyte, for example? While usability of projects are
+                            able to be evaluated in fields such as HCI and industrial design, architecture is limited by
+                            scale and costs, and thus these studies can only be done through simulations or through
+                            post-occupancy studies from built precedents. In order to experience architecture, a person
+                            needs to move around, navigate, and explore in order to obtain a complete impression. Thus,
+                            movement becomes the primary way in which we interact with the built environment.
+                        </div>
+                        <div class="project_process_text">
+                            How might we measure this? One of the main complications with understanding how and what
+                            people experience, is how highly subjective experiences can be. This project hypothesizes
+                            that analysing human motion patterns would be an important contributor towards research in
+                            understanding the usability and quality of spaces.
+                        </div>
+                        <div class="project_process_text">
+                            This study explores the systematic, quantitative analysis of motion in a given environment.
+                            It attempts to taxonomize human body motion, presenting a framework that can be built upon
+                            and layered to represent a wider context of determinants.
+                        </div>
+                    </div>
+                    <div class="intro_visual">
+                        <img src="assets/emsi_intro.svg">
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">Background</div>
+                        <div class="project_process_text">
+                            During the early 1900s, Lillian and Frank Gilbreth introduced ideas of motion economy
+                            through using chronocyclegraphs, where small light bulbs where attached to the tips of
+                            worker’s fingers. In their studies, they revealed 18 types of elemental motions in the
+                            industrial workplace which were eventually used to identify costly motion within
+                            manufacturing and assembly. We drew inspiration from this framework as a starting point to
+                            think about how movement can be broken down, in the absence of clear tasks.
+                        </div>
+                    </div>
+                    <div class="intro_visual">
+                        <img src="assets/emsi_background.svg">
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">EMSI Framework</div>
+                        <div class="project_process_text">
+                            The EMSI (Elemental Motion in Spatial Interaction) Framework is a response to questions of
+                            identifying and understanding movements within built spaces. Broadly, it considers a single
+                            input, a human action, and two levels of output. There are four taxonomy groups, State and
+                            Type, which allows a computer to firstly identify the movement, and Goal and Texture, which
+                            further speculate on how a computer could understand the intent and quality of motion.
+                        </div>
+                    </div>
+                    <div class="intro_visual">
+                        <img src="assets/emsi_background.svg">
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">Case Study</div>
+                        <div class="project_process_text">
+                            The EMSI (Elemental Motion in Spatial Interaction) Framework is a response to questions of
+                            identifying and understanding movements within built spaces. Broadly, it considers a single
+                            input, a human action, and two levels of output. There are four taxonomy groups, State and
+                            Type, which allows a computer to firstly identify the movement, and Goal and Texture, which
+                            further speculate on how a computer could understand the intent and quality of motion.
+                        </div>
+                    </div>
+                    <div class="intro_visual">
+                        <img src="assets/emsi_background.svg">
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">Computer Vision</div>
+                        <div class="project_process_text">
+                            The EMSI (Elemental Motion in Spatial Interaction) Framework is a response to questions of
+                            identifying and understanding movements within built spaces. Broadly, it considers a single
+                            input, a human action, and two levels of output. There are four taxonomy groups, State and
+                            Type, which allows a computer to firstly identify the movement, and Goal and Texture, which
+                            further speculate on how a computer could understand the intent and quality of motion.
+                        </div>
+                    </div>
+                    <div class="intro_visual">
+                        <img src="assets/emsi_background.svg">
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer_text">
+                        <h7>© margaret zhou</h7>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

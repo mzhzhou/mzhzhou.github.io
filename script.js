@@ -60,6 +60,43 @@ document.addEventListener("mousemove", function (event) {
     circle.style.setProperty("--pointer-color", pointerColor);
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const draggables = document.querySelectorAll('.draggable');
+
+    draggables.forEach(draggable => {
+        let offsetX = 0, offsetY = 0, initialX = 0, initialY = 0;
+        let isDragging = false;
+
+        draggable.addEventListener('mousedown', (e) => {
+            e.preventDefault(); // Prevent default behavior
+            isDragging = true;
+            initialX = e.clientX;
+            initialY = e.clientY;
+            offsetX = draggable.offsetLeft;
+            offsetY = draggable.offsetTop;
+            window.addEventListener('mousemove', onMouseMove);
+            window.addEventListener('mouseup', onMouseUp);
+        });
+
+        function onMouseMove(e) {
+            if (isDragging) {
+                const dx = e.clientX - initialX;
+                const dy = e.clientY - initialY;
+                draggable.style.left = `${offsetX + dx}px`;
+                draggable.style.top = `${offsetY + dy}px`;
+            }
+        }
+
+        function onMouseUp() {
+            isDragging = false;
+            window.removeEventListener('mousemove', onMouseMove);
+            window.removeEventListener('mouseup', onMouseUp);
+        }
+    });
+});
+
+
+
 
 
 // window.addEventListener('DOMContentLoaded', function () {
