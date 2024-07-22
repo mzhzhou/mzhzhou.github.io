@@ -238,7 +238,7 @@ img {
 
 .project_backing_tech_lane:hover {
     /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
+    animation: wiggle 0.4s ease;
     /* transform: rotate3d(0, 1, 0, 180deg); */
     animation-iteration-count: 1;
     background-color: #4E96F1;
@@ -265,7 +265,7 @@ img {
 
 .project_backing_tech_culi:hover {
     /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
+    animation: wiggle 0.4s ease;
     animation-iteration-count: 1;
     background-color: #41BA51;
     border: none;
@@ -290,7 +290,7 @@ img {
 
 .project_backing_tech_bot:hover {
     /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
+    animation: wiggle 0.4s ease;
     animation-iteration-count: 1;
     background-color: #D74D4D;
     border: none;
@@ -298,6 +298,7 @@ img {
 
 .project_backing_tech_bot:hover .h1_tech {
     color: white;
+    animation: stretchtext 0.5s ease;
 }
 
 .project_backing_tech_bot:hover .h4_tech {
@@ -315,7 +316,7 @@ img {
 
 .project_backing_tech_emsi:hover {
     /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
+    animation: wiggle 0.4s ease;
     animation-iteration-count: 1;
     background-color: #E0D1FF;
     border: none;
@@ -325,6 +326,28 @@ img {
     color: white;
 }
 
+@keyframes stretchtext {
+    0% {
+        letter-spacing: 2px;
+    }
+
+    25% {
+        letter-spacing: 5px;
+    }
+
+    50% {
+        letter-spacing: 15px;
+    }
+
+    75% {
+        letter-spacing: 13px;
+    }
+
+    100% {
+        letter-spacing: 2px;
+    }
+}
+
 @keyframes wiggle {
     0% {
         transform: rotate(0);
@@ -332,6 +355,7 @@ img {
 
     25% {
         transform: rotate(1deg);
+        scale: 101%;
     }
 
     50% {
@@ -340,6 +364,31 @@ img {
 
     75% {
         transform: rotate(0.5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes wigglescale {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(1.5deg);
+        scale: 101%;
+    }
+
+    50% {
+        transform: rotate(-1.5deg);
+        scale: 103%;
+    }
+
+    75% {
+        transform: rotate(0.8deg);
+        scale: 101%;
     }
 
     100% {
@@ -653,6 +702,16 @@ nav a {
     transition: none;
     will-change: top, left;
     /* z-index: -3; */
+}
+
+.draggable:hover {
+    animation: wigglescale 0.3s ease;
+    animation-iteration-count: 1;
+}
+
+.draggable1:hover {
+    animation: wigglescale 0.3s ease;
+    animation-iteration-count: 1;
 }
 
 
