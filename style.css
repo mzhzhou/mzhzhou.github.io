@@ -228,7 +228,7 @@ img {
     animation-iteration-count: 1;
 }
 
-.project_backing_tech_lane {
+.project_backing_smill {
     border: 1px solid #F1F1F1;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -236,9 +236,36 @@ img {
     z-index: 10;
 }
 
-.project_backing_tech_lane:hover {
-    /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
+.project_backing_smill:hover {
+    animation: wiggle 0.3s ease;
+    /* animation: spin 0.8s ease; */
+    /* transform: rotate3d(0, 1, 0, 180deg); */
+    animation-iteration-count: 1;
+    background-color: #8885D6;
+    border: none;
+    /* color: white; */
+}
+
+.project_backing_smill:hover .h1 {
+    color: white;
+}
+
+.project_backing_smill:hover .h4 {
+    color: white;
+    opacity: 70%;
+}
+
+.project_backing_lane {
+    border: 1px solid #F1F1F1;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.project_backing_lane:hover {
+    animation: wiggle 0.3s ease;
+    /* animation: spin 0.8s ease; */
     /* transform: rotate3d(0, 1, 0, 180deg); */
     animation-iteration-count: 1;
     background-color: #4E96F1;
@@ -246,16 +273,16 @@ img {
     /* color: white; */
 }
 
-.project_backing_tech_lane:hover .h1_tech {
+.project_backing_lane:hover .h1 {
     color: white;
 }
 
-.project_backing_tech_lane:hover .h4_tech {
+.project_backing_lane:hover .h4 {
     color: white;
     opacity: 70%;
 }
 
-.project_backing_tech_culi {
+.project_backing_culi {
     border: 1px solid #F1F1F1;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -263,24 +290,24 @@ img {
     z-index: 10;
 }
 
-.project_backing_tech_culi:hover {
-    /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
+.project_backing_culi:hover {
+    animation: wiggle 0.3s ease;
+    /* animation: spin 0.8s ease; */
     animation-iteration-count: 1;
     background-color: #41BA51;
     border: none;
 }
 
-.project_backing_tech_culi:hover .h1_tech {
+.project_backing_culi:hover .h1 {
     color: white;
 }
 
-.project_backing_tech_culi:hover .h4_tech {
+.project_backing_culi:hover .h4 {
     color: white;
     opacity: 70%;
 }
 
-.project_backing_tech_bot {
+.project_backing_infer {
     border: 1px solid #F1F1F1;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -288,41 +315,21 @@ img {
     z-index: 10;
 }
 
-.project_backing_tech_bot:hover {
-    /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
+.project_backing_infer:hover {
+    animation: wiggle 0.3s ease;
+    /* animation: spin 0.8s ease; */
     animation-iteration-count: 1;
-    background-color: #D74D4D;
+    background-color: #86977A;
     border: none;
 }
 
-.project_backing_tech_bot:hover .h1_tech {
+.project_backing_infer:hover .h1 {
     color: white;
 }
 
-.project_backing_tech_bot:hover .h4_tech {
+.project_backing_infer:hover .h4 {
     color: white;
     opacity: 70%;
-}
-
-.project_backing_tech_emsi {
-    border: 1px solid #F1F1F1;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-    z-index: 10;
-}
-
-.project_backing_tech_emsi:hover {
-    /* animation: wiggle 0.3s ease; */
-    animation: spin 0.8s ease;
-    animation-iteration-count: 1;
-    background-color: #E0D1FF;
-    border: none;
-}
-
-.project_container:hover {
-    color: white;
 }
 
 @keyframes wiggle {
@@ -720,14 +727,14 @@ h1 {
     /*   font-family: "Oxygen"; */
 }
 
-.h1_tech {
+.h1 {
     font-family: "Oxygen", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 0.25px;
     text-align: left;
-    color: #303030;
+    color: #1a3e2f;
     line-height: 18px;
     margin: 0;
     /*   font-family: "Oxygen"; */
@@ -741,19 +748,6 @@ h2 {
     letter-spacing: 0.25px;
     text-align: left;
     color: #1a3e2f;
-    line-height: normal;
-    margin: 0;
-    /*   font-family: "Oxygen"; */
-}
-
-.h2_tech {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: 0.25px;
-    text-align: left;
-    color: #303030;
     line-height: normal;
     margin: 0;
     /*   font-family: "Oxygen"; */
@@ -799,7 +793,7 @@ h4 {
     /*   font-family: "Oxygen"; */
 }
 
-.h4_tech {
+.h4 {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -807,7 +801,7 @@ h4 {
     letter-spacing: 0.25px;
     opacity: 0.4;
     text-align: left;
-    color: #303030;
+    color: #1a3e2f;
     line-height: normal;
     margin: 0;
     /*   font-family: "Oxygen"; */
