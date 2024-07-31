@@ -78,15 +78,19 @@
                 </div>
                 <div class="intro_box">
                     <div class="intro_text">
-                        <div class="project_process_title">Problem Space</div>
+                        <div class="project_process_title">Helping people communicate through movement</div>
                         <div class="project_process_text">
-                            During the pandemic, Jessica and I were in our rooms meeting over zoom almost everyday. At
-                            some point while brainstorming for projects, Jessica mentioned that it could be fun to build
-                            a dance party room - and that is what we did.
+                            During the pandemic, Jessica and I were in our rooms meeting over zoom almost everyday, a
+                            routine too familiar to many people across the world. We were located in 2 different
+                            countries (Canada and United Kingdom) and wanted to build a project that would help people
+                            connect in a non-conventional way. In the middle of a conversation while
+                            brainstorming for projects, Jessica mentioned that it could be fun to build a dance party
+                            room, and we set out to try it out.
                         </div>
                         <div class="project_process_text">
-                            We wanted to build something that encouraged freedom of dance expression in a remote
-                            setting, without the intimidation of being on camera. A platform for being present with
+                            We wanted to build something that helped encourage the freedom of dance expression, in a
+                            remote
+                            setting, without the intimidation of being on camera; A platform for being present with
                             someone, sharing a moment - sharing a dance.
                         </div>
                     </div>
@@ -97,55 +101,33 @@
 
                 <div class="intro_box">
                     <div class="intro_text">
-                        <div class="project_process_title">How it works</div>
-                        <div class="project_process_text">
-                            xxx
+                        <div class="project_process_title">Using ML to obtain visual information
                         </div>
                         <div class="project_process_text">
-                            xxx
-                        </div>
-                    </div>
-                    <div class="intro_visual">
-                        <img src="assets/bot_works.svg" />
-                    </div>
-                    <div class="intro_visual">
-                        <img src="assets/bot_works2.png" />
-                    </div>
-                    <div class="intro_visual">
-                        <img src="assets/bot_works3.png" />
-                    </div>
-                    <div class="intro_visual">
-                        <img src="assets/bot_works4.png" />
-                    </div>
-                </div>
-                <div class="intro_box">
-                    <div class="intro_text">
-                        <div class="project_process_title">Webcam Interaction</div>
-                        <div class="project_process_text">
-                            xxx
+                            It was determined quite early on that in order for any visuals to be captured and
+                            transferred to the platform, we would need to use computer vision to collect information. We
+                            did not want the platform to utilize unfiltered camera videos and so we chose to use machine
+                            learning model PoseNet, a pose estimation model, to capture joint location. While the pose
+                            estimation is not the best for detecting more complex movement patterns, it was good for
+                            creating an abstracted version of the moves, which allows for added anonymity.
                         </div>
                     </div>
                     <div class="intro_visual">
-                        <img src="assets/bot_webcam.png" />
+                        <img src="assets/bot_ml5.png">
                     </div>
-                </div>
-                <div class="intro_box">
-                    <div class="intro_text">
-                        <div class="project_process_title">Interface</div>
-                        <div class="project_process_text">
-                            xxx
-                        </div>
-                    </div>
-                    <div class="intro_visual">
-                        <img src="assets/bot_interface.svg" />
+                    <div class="intro_source">
+                        Source:
+                        <a href="https://docs.ml5js.org/#/reference/bodypose">ML5</a>
                     </div>
                 </div>
 
                 <div class="intro_box">
                     <div class="intro_text">
-                        <div class="project_process_title">Bo-t Language</div>
+                        <div class="project_process_title">Introducing Bo-t Language</div>
                         <div class="project_process_text">
-                            xxx
+                            Bo-t Language is a collaborative, web-based dance party room platform where individuals can
+                            host and attend rooms to dance with others. It encourages and allows for real-time movement
+                            expression in remote settings.
                         </div>
                     </div>
                 </div>
@@ -157,11 +139,82 @@
                         <iframe
                             src="https://player.vimeo.com/video/519333229?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                             frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                            style="position:relative;top:80px;left:0;width:900px;height:100%;" title="LANE Journey">
+                            style="position:relative;top:30px;left:0;width:80%;height:100%;" title="LANE Journey">
                         </iframe>
                         <script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
                 </div>
+
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">How it works</div>
+                        <div class="project_process_text">
+                            For the dance party platform to work, information needs to be first gathered from a host
+                            machine and pushed to a public server link. The platform would require webcam camera to be
+                            switched on, but would only collect and transmit lines drawn between joint location data.
+                            Once a party attendee joins the server, their joint location data would also be collected
+                            and transmitted back to the server so that both party attendees can see each other moving.
+                            Additionally, it’s not a dance party without music so audio information is also hosted on
+                            the server so that one person can switch on and off music or change music for the entire
+                            party.
+                        </div>
+                        <div class="project_process_text">
+                            The program utilizes Node.js, Socket.io and Ngrok to host the public server, and p5.js,
+                            ml5.js and html/css for interface design.
+                        </div>
+                    </div>
+                    <div class="h3_tech">Host-Attendee Sharing</div>
+                    <div class="intro_visual">
+                        <img src="assets/bot_works.svg" />
+                    </div>
+                    <div class="h3_tech">File Sharing</div>
+                    <div class="intro_visual">
+                        <img src="assets/bot_works2.png" />
+                    </div>
+                    <div class="h3_tech">Server Hosting</div>
+                    <div class="intro_visual">
+                        <img src="assets/bot_works3.png" />
+                    </div>
+                    <div class="h3_tech">Interface and Visual Data Sharing</div>
+                    <div class="intro_visual">
+                        <img src="assets/bot_works4.png" />
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">'Party' Hosting</div>
+                        <div class="project_process_text">
+                            The project was designed to be used on web-based platforms due to built-in cameras being
+                            very common and widely accessible within laptop and desktop devices. The desktop nature also
+                            means that the camera is already set up in a backdrop and environment where remote workers
+                            were already comfortable with. Individuals can simply host and start the platform on their
+                            own laptop and send a link to friends or party attendees to join.
+                        </div>
+                    </div>
+                    <div class="intro_visual">
+                        <img src="assets/bot_webcam.png" />
+                    </div>
+                </div>
+                <!-- <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">Interface</div>
+                        <div class="project_process_text">
+                            xxx
+                        </div>
+                    </div>
+                    <div class="intro_visual">
+                        <img src="assets/bot_interface.svg" />
+                    </div>
+                </div> -->
+                <!-- <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">Reflections</div>
+                        <div class="project_process_text">
+                            xxx
+                        </div>
+                    </div>
+                </div> -->
+
                 <footer>
                     <div class="footer_text">
                         <h7>© margaret zhou</h7>

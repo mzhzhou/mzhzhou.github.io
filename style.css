@@ -21,8 +21,8 @@ to this section's matching END comment to see page-specific styles.
     --wrapper-height: 87vh;
     --image-max-width: 300px;
     --image-margin: 3rem;
-    --font-family: "Oxygen", sans-serif;
-    --font-family-header: "Oxygen", sans-serif;
+    --font-family: "oxygen", sans-serif;
+    --font-family-header: "oxygen", sans-serif;
 }
 
 /* Basic page style resets */
@@ -131,7 +131,7 @@ img {
             rgba(197, 170, 236, 0) 100%);
     transition: transform 0.1s linear;
     /* Smooth transition for better visual effect */
-    z-index: 1;
+    z-index: 20;
     transform: translate(-50%, -50%);
 }
 
@@ -241,18 +241,23 @@ img {
     /* animation: spin 0.8s ease; */
     /* transform: rotate3d(0, 1, 0, 180deg); */
     animation-iteration-count: 1;
-    background-color: #8885D6;
-    border: none;
+    background-color: #FEFDFF;
+    border: 0.2px solid #4149A2;
     /* color: white; */
 }
 
 .project_backing_smill:hover .h1 {
-    color: white;
+    color: #4149A2;
 }
 
 .project_backing_smill:hover .h4 {
-    color: white;
+    color: #4149A2;
     opacity: 70%;
+}
+
+.project_backing_smill:hover .project_tag {
+    background-color: #4149A2;
+    color: white;
 }
 
 .project_backing_lane {
@@ -268,18 +273,23 @@ img {
     /* animation: spin 0.8s ease; */
     /* transform: rotate3d(0, 1, 0, 180deg); */
     animation-iteration-count: 1;
-    background-color: #4E96F1;
-    border: none;
+    background-color: rgba(66, 148, 240, 0.10);
+    border: 0.2px solid #316FB3;
     /* color: white; */
 }
 
 .project_backing_lane:hover .h1 {
-    color: white;
+    color: #316FB3;
 }
 
 .project_backing_lane:hover .h4 {
-    color: white;
+    color: #316FB3;
     opacity: 70%;
+}
+
+.project_backing_lane:hover .project_tag {
+    background-color: #316FB3;
+    color: white;
 }
 
 .project_backing_culi {
@@ -294,17 +304,22 @@ img {
     animation: wiggle 0.3s ease;
     /* animation: spin 0.8s ease; */
     animation-iteration-count: 1;
-    background-color: #41BA51;
-    border: none;
+    background-color: rgba(235, 242, 221, 0.50);
+    border: 0.2px solid #1B912B;
 }
 
 .project_backing_culi:hover .h1 {
-    color: white;
+    color: #1B912B;
 }
 
 .project_backing_culi:hover .h4 {
-    color: white;
+    color: #1B912B;
     opacity: 70%;
+}
+
+.project_backing_culi:hover .project_tag {
+    background-color: #1B912B;
+    color: white;
 }
 
 .project_backing_infer {
@@ -319,17 +334,22 @@ img {
     animation: wiggle 0.3s ease;
     /* animation: spin 0.8s ease; */
     animation-iteration-count: 1;
-    background-color: #86977A;
-    border: none;
+    background-color: rgba(145, 169, 127, 0.10);
+    border: 0.2px solid #748C66;
 }
 
 .project_backing_infer:hover .h1 {
-    color: white;
+    color: #5B724C;
 }
 
 .project_backing_infer:hover .h4 {
-    color: white;
+    color: #5B724C;
     opacity: 70%;
+}
+
+.project_backing_infer:hover .project_tag {
+    background-color: #5B724C;
+    color: white;
 }
 
 @keyframes wiggle {
@@ -338,19 +358,33 @@ img {
     }
 
     25% {
-        transform: rotate(1deg);
+        transform: rotate(0.5deg);
     }
 
     50% {
-        transform: rotate(-1deg);
+        transform: rotate(-0.5deg);
     }
 
     75% {
-        transform: rotate(0.5deg);
+        transform: rotate(0.3deg);
     }
 
     100% {
         transform: rotate(0);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
     }
 }
 
@@ -1043,6 +1077,8 @@ h7 {
     align-content: center;
     text-align: center;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding: 100px;
     /* border: 1px solid var(--Main, #61726B); */
 }
@@ -1056,6 +1092,17 @@ h7 {
     font-weight: 300;
     text-align: center;
     color: #1a3e2f;
+    /*   border: 1px solid black; */
+}
+
+.disclaimer_note {
+    width: 50%;
+    font-family: "Oxygen", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #CA2D2D;
     /*   border: 1px solid black; */
 }
 
@@ -1100,7 +1147,6 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: #86977A;
     /*   border: 1px solid black; */
 }
 
@@ -1124,9 +1170,9 @@ h7 {
     align-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: #8885D6;
+    background: #F2EDEB;
     z-index: 5;
-    border: 0.5px solid var(--Main, #61726B);
+    border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
 }
@@ -1141,9 +1187,9 @@ h7 {
     align-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: #4294F0;
+    background: rgba(66, 148, 240, 0.10);
     z-index: 5;
-    border: 0.5px solid var(--Main, #61726B);
+    border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
 }
@@ -1152,15 +1198,15 @@ h7 {
     width: calc((100% / 3) + 1px);
     min-width: 300px;
     height: 300px;
-    padding: 20px;
+    padding: 30px;
     justify-content: center;
     align-items: center;
     align-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: #86977A;
+    background: rgba(145, 169, 127, 0.20);
     z-index: 5;
-    border: 0.5px solid var(--Main, #61726B);
+    border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
 }
@@ -1175,19 +1221,20 @@ h7 {
     align-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: #27A500;
+    background: rgba(235, 242, 221, 0.50);
     z-index: 5;
-    border: 0.5px solid var(--Main, #61726B);
+    border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
 }
 
 .project_name {
     font-size: 45px;
-    font-weight: 400;
     text-align: center;
     color: #FFFFFF;
-    letter-spacing: 0.25px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.5px;
     /*   border: 1px solid black; */
 }
 
@@ -1195,6 +1242,7 @@ h7 {
     /*   border: 1px solid black; */
     display: flex;
     flex-direction: column;
+    font-family: "Oxygen", sans-serif;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1203,9 +1251,9 @@ h7 {
 }
 
 .details_title {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Oxygen", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 0.25px;
     color: #FFFFFF;
     /*   border: 1px solid black; */
@@ -1215,10 +1263,10 @@ h7 {
     font-size: 18px;
     font-family: "Oxygen", sans-serif;
     letter-spacing: 0.25px;
-    font-weight: 200;
-    margin-top: 10px;
+    font-weight: 800;
+    margin-top: 5px;
     color: #FFFFFF;
-
+    line-height: 28px;
     /*   border: 1px solid black; */
 }
 
@@ -1229,6 +1277,57 @@ h7 {
     text-align: center;
     align-content: center;
     /*   border: 1px solid black; */
+}
+
+.project_details_smill .details_title {
+    color: #4149A2;
+    font-style: normal;
+    font-weight: 200;
+
+}
+
+.project_details_smill .project_name {
+    color: #4149A2;
+}
+
+.project_details_smill .details_info {
+    color: #4149A2;
+}
+
+.project_details_lane .details_title {
+    color: #316FB3;
+}
+
+.project_details_lane .details_info {
+    color: #316FB3;
+}
+
+.project_details_lane .project_name {
+    color: #316FB3;
+}
+
+.project_details_infer .details_title {
+    color: #5B724C;
+}
+
+.project_details_infer .details_info {
+    color: #5B724C;
+}
+
+.project_details_infer .project_name {
+    color: #5B724C;
+}
+
+.project_details_culinaid .details_title {
+    color: #1B912B;
+}
+
+.project_details_culinaid .details_info {
+    color: #1B912B;
+}
+
+.project_details_culinaid .project_name {
+    color: #1B912B;
 }
 
 .intro_box {
@@ -1247,7 +1346,7 @@ h7 {
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
     background: #FFF8EB;
     margin-top: -1px;
 }
@@ -1261,6 +1360,18 @@ h7 {
     /* margin-left: 90px; */
     /* margin-bottom: 150px; */
 }
+
+.intro_source {
+    position: relative;
+    font-size: 12px;
+    justify-content: right;
+    align-items: right;
+    align-content: right;
+    top: -20px;
+    right: 0px;
+    color: #1a3e2f;
+}
+
 
 .intro_visual {
     position: relative;
@@ -1373,7 +1484,7 @@ h7 {
     font-size: 16px;
     color: #1a3e2f;
     margin-top: 30px;
-    line-height: 23px;
+    line-height: 24px;
 }
 
 .project_proposal_title {
@@ -1514,6 +1625,8 @@ h7 {
 
     .all_work_container {
         width: auto;
+        padding-left: 40px;
+        padding-right: 40px;
         min-width: 50px;
         justify-content: left;
         column-gap: 0px;
