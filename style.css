@@ -68,6 +68,12 @@ to this section's matching END comment to see page-specific styles.
     /*   border: 1px solid black; */
 }
 
+.header_container h3 {
+    margin-left: 60px;
+    opacity: 60%;
+    font-style: italic;
+}
+
 .header_container_tech {
     display: flex;
     top: 0;
@@ -986,7 +992,10 @@ h5 {
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    margin: 60px;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
 }
 
 .h5_tech {
@@ -1740,6 +1749,10 @@ h7 {
         height: auto;
         margin-left: 0px;
         overflow-x: auto;
+    }
+
+    .header_container h3 {
+        margin-left: 40px;
     }
 
     .title_container {
