@@ -137,13 +137,14 @@ img {
 
 .title_container {
     width: 70%;
-    min-width: 300px;
+    /* min-width: 300px; */
     max-width: 600px;
     align-content: left;
     align-items: left;
     text-align: left;
     display: block;
     margin-top: 180px;
+    margin-left: 50px;
     /*   border: 1px solid black; */
 }
 
@@ -161,7 +162,7 @@ img {
     margin-top: 580px;
     margin-bottom: 50px;
     width: 60%;
-    min-width: 400px;
+    /* min-width: 400px; */
     max-width: 700px;
     align-items: right;
     justify-content: right;
@@ -228,22 +229,63 @@ img {
     animation-iteration-count: 1;
 }
 
+.project_backing_whole_smill {
+    position: relative;
+}
+
 .project_backing_smill {
     border: 1px solid #F1F1F1;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     z-index: 10;
 }
 
-.project_backing_smill:hover {
+.backing_break_smill {
+    position: absolute;
+    bottom: 20px;
+    width: 120%;
+    height: 0%;
+    border: 0.3px solid black;
+}
+
+.project_backing_lower {
+    position: relative;
+    top: -1px;
+    border: 1px solid #F1F1F1;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.project_backing_whole_smill:hover {
     animation: wiggle 0.3s ease;
     /* animation: spin 0.8s ease; */
     /* transform: rotate3d(0, 1, 0, 180deg); */
     animation-iteration-count: 1;
-    background-color: #FEFDFF;
-    border: 0.2px solid #4149A2;
+
     /* color: white; */
+}
+
+.project_backing_whole_smill:hover .project_backing_smill {
+    border: 0.2px solid #4149A2;
+    background-color: #FEFDFF;
+}
+
+.project_backing_whole_smill:hover .project_backing_lower {
+    border: 0.2px solid #4149A2;
+    background-color: #FEFDFF;
+}
+
+.project_backing_whole_smill:hover .project_home_image {
+    border: 0.2px solid rgba(65, 73, 162, 0.60);
+}
+
+.project_backing_whole_smill:hover .project_lower_text {
+    color: #4149A2;
 }
 
 .project_backing_smill:hover .h1 {
@@ -260,22 +302,45 @@ img {
     color: white;
 }
 
+.project_backing_whole_lane {
+    position: relative;
+}
+
 .project_backing_lane {
-    border: 1px solid #F1F1F1;
-    border-radius: 30px;
+    border: 0.2px solid #F1F1F1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     z-index: 10;
 }
 
-.project_backing_lane:hover {
+.project_backing_whole_lane:hover {
     animation: wiggle 0.3s ease;
     /* animation: spin 0.8s ease; */
     /* transform: rotate3d(0, 1, 0, 180deg); */
     animation-iteration-count: 1;
-    background-color: rgba(66, 148, 240, 0.10);
-    border: 0.2px solid #316FB3;
+    /* background-color: rgba(66, 148, 240, 0.10);
+    border: 0.2px solid #316FB3; */
     /* color: white; */
+}
+
+.project_backing_whole_lane:hover .project_backing_lane {
+    border: 0.2px solid #316FB3;
+    background-color: #EBEEED;
+}
+
+.project_backing_whole_lane:hover .project_home_image {
+    border: 0.2px solid rgba(49, 111, 179, 0.60);
+}
+
+.project_backing_whole_lane:hover .project_backing_lower {
+    border: 0.2px solid #316FB3;
+    background-color: #EBEEED;
+}
+
+.project_backing_whole_lane:hover .project_lower_text {
+    color: #316FB3;
 }
 
 .project_backing_lane:hover .h1 {
@@ -292,20 +357,43 @@ img {
     color: white;
 }
 
+.project_backing_whole_culi {
+    position: relative;
+}
+
 .project_backing_culi {
     border: 1px solid #F1F1F1;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     z-index: 10;
 }
 
-.project_backing_culi:hover {
+.project_backing_whole_culi:hover {
     animation: wiggle 0.3s ease;
     /* animation: spin 0.8s ease; */
     animation-iteration-count: 1;
-    background-color: rgba(235, 242, 221, 0.50);
+    /* background-color: #EBF2DD;
+    border: 0.2px solid #1B912B; */
+}
+
+.project_backing_whole_culi:hover .project_backing_culi {
     border: 0.2px solid #1B912B;
+    background-color: #EBF2DD;
+}
+
+.project_backing_whole_culi:hover .project_home_image {
+    border: 0.2px solid rgba(27, 145, 43, 0.60);
+}
+
+.project_backing_whole_culi:hover .project_backing_lower {
+    border: 0.2px solid #1B912B;
+    background-color: #EBF2DD;
+}
+
+.project_backing_whole_culi:hover .project_lower_text {
+    color: #1B912B;
 }
 
 .project_backing_culi:hover .h1 {
@@ -322,27 +410,50 @@ img {
     color: white;
 }
 
+.project_backing_whole_infer {
+    position: relative;
+}
+
 .project_backing_infer {
     border: 1px solid #F1F1F1;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     z-index: 10;
 }
 
-.project_backing_infer:hover {
+.project_backing_whole_infer:hover {
     animation: wiggle 0.3s ease;
     /* animation: spin 0.8s ease; */
     animation-iteration-count: 1;
-    background-color: rgba(145, 169, 127, 0.10);
-    border: 0.2px solid #748C66;
+    /* background-color: #F3F0E1;
+    border: 0.2px solid #748C66; */
 }
 
-.project_backing_infer:hover .h1 {
+.project_backing_whole_infer:hover .project_backing_infer {
+    border: 0.2px solid #748C66;
+    background-color: #F3F0E1;
+}
+
+.project_backing_whole_infer:hover .project_home_image {
+    border: 0.2px solid rgba(91, 114, 76, 0.60);
+}
+
+.project_backing_whole_infer:hover .project_backing_lower {
+    border: 0.2px solid #748C66;
+    background-color: #F3F0E1;
+}
+
+.project_backing_whole_infer:hover .project_lower_text {
     color: #5B724C;
 }
 
-.project_backing_infer:hover .h4 {
+.project_backing_whole_infer:hover .h1 {
+    color: #5B724C;
+}
+
+.project_backing_whole_infer:hover .h4 {
     color: #5B724C;
     opacity: 70%;
 }
@@ -405,7 +516,7 @@ img {
     flex-direction: column;
     justify-content: left;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     margin-left: 50px;
     margin-right: 50px;
     align-items: left;
@@ -462,6 +573,31 @@ img {
     flex-direction: row;
     gap: 15px;
     margin-top: 5px;
+}
+
+.project_lower_text_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.project_lower_text {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #1a3e2f;
+    line-height: 18px;
+    /* padding-top: 5px;
+    padding-bottom:  */
+    /*   font-family: "Oxygen"; */
 }
 
 .project_tag {
@@ -956,7 +1092,9 @@ h7 {
 
 .am_love_container {
     margin-top: 150px;
-    width: 1000px;
+    width: auto;
+    min-width: 100px;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     margin-left: 100px;
@@ -984,7 +1122,8 @@ h7 {
 }
 
 .about_1 {
-    width: 380px;
+    width: auto;
+    max-width: 380px;
     font-size: 18px;
     font-family: "Oxygen", sans-serif;
     font-weight: 300;
@@ -994,7 +1133,8 @@ h7 {
 }
 
 .about_2 {
-    width: 400px;
+    width: auto;
+    max-width: 400px;
     font-size: 18px;
     font-family: "Oxygen", sans-serif;
     font-weight: 300;
@@ -1604,6 +1744,7 @@ h7 {
 
     .title_container {
         width: 70%;
+        margin-left: 0px;
     }
 
     .title_container h5 {
@@ -1621,6 +1762,7 @@ h7 {
 
     .subtitle_container h6 {
         font-size: 30px;
+        margin-left: 40px;
     }
 
     .all_work_container {
@@ -1936,9 +2078,26 @@ h7 {
         flex-direction: column;
     }
 
+    .am_container {
+        width: auto;
+        margin-right: 30px;
+    }
+
     .am_love_container {
         flex-direction: column;
         gap: 150px;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+    .love_container {
+        width: auto;
+        margin-right: 30px;
+    }
+
+    .prof_container {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .footer_text {
