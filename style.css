@@ -471,7 +471,7 @@ img {
     color: white;
 }
 
-.project_backing_whole_bot {
+/* .project_backing_whole_bot {
     position: relative;
 }
 
@@ -486,10 +486,7 @@ img {
 
 .project_backing_whole_bot:hover {
     animation: wiggle 0.3s ease;
-    /* animation: spin 0.8s ease; */
     animation-iteration-count: 1;
-    /* background-color: #F3F0E1;
-    border: 0.2px solid #748C66; */
 }
 
 .project_backing_whole_bot:hover .project_backing_bot {
@@ -522,7 +519,7 @@ img {
 .project_backing_bot:hover .project_tag {
     background-color: #5B724C;
     color: white;
-}
+} */
 
 @keyframes wiggle {
     0% {
