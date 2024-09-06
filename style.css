@@ -215,21 +215,14 @@ img {
     justify-content: center;
 }
 
-.all_work_container_center_tech {
-    display: flex;
-    width: 100%;
-    border-top: 1px solid #C6D2C8;
-    background-color: #FFF8EB;
-    justify-content: center;
-}
-
 .all_work_container {
     width: auto;
     display: flex;
     max-width: 1600px;
     /* min-width: 1000px; */
     margin-top: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+    /* flex-direction: row; */
     flex-flow: row wrap;
     justify-content: center;
     column-gap: 40px;
@@ -251,6 +244,8 @@ img {
 
 .project_backing_whole_smill {
     position: relative;
+    /* width: 45vw;
+    max-width: 750px; */
 }
 
 .project_backing_smill {
@@ -324,6 +319,8 @@ img {
 
 .project_backing_whole_lane {
     position: relative;
+    /* width: 45vw;
+    max-width: 750px; */
 }
 
 .project_backing_lane {
@@ -379,6 +376,8 @@ img {
 
 .project_backing_whole_culi {
     position: relative;
+    /* width: 45vw;
+    max-width: 750px; */
 }
 
 .project_backing_culi {
@@ -432,6 +431,8 @@ img {
 
 .project_backing_whole_infer {
     position: relative;
+    /* width: 45vw;
+    max-width: 750px; */
 }
 
 .project_backing_infer {
@@ -580,8 +581,8 @@ img {
 }
 
 .project_container {
-    width: 500px;
-    min-width: 400px;
+    width: 580px;
+    min-width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -630,6 +631,7 @@ img {
 
 .project_home_image {
     border-radius: 20px;
+    width: 100%;
 }
 
 .project_container:hover .gradient_circle_pointer {
@@ -1658,6 +1660,23 @@ h7 {
     padding: 20px;
 }
 
+.intro_visual_row {
+    position: relative;
+    max-width: 800px;
+    min-width: 300px;
+    height: auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    border-radius: 0;
+    /* border: 1px solid rgba(0, 0, 0, 0.20); */
+    padding: 20px;
+}
+
 .proposal_text_box {
     position: relative;
     width: 100%;
@@ -2354,7 +2373,7 @@ footer {
     display: flex;
     /* position: absolute;
     bottom: 0px; */
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
     align-items: center;
     justify-content: center;
