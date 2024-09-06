@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (x + dx > window.innerWidth - circleRadius || x + dx < circleRadius) {
             dx = -dx;
         }
-        if (y + dy > 950 || y + dy < circleRadius) {
+        if (y + dy > 650 || y + dy < circleRadius) {
             dy = -dy;
         }
         x += dx;
