@@ -45,6 +45,33 @@ document.addEventListener("DOMContentLoaded", function () {
     move();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const circle = document.querySelector(".gradient_circle_alt");
+    const circleRadius = (parseInt(getComputedStyle(circle).width) / 2);
+    let dx = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 2 + 0.25); // Change in position along X-axis
+    let dy = (Math.random() < 0.5 ? -1 : 1) * (Math.random() * 2 + 0.25); // Change in position along Y-axis
+    let x = window.innerWidth / 2;
+    let y = window.innerHeight / 2;
+
+    function move() {
+        if (x + dx > window.innerWidth - circleRadius || x + dx < circleRadius) {
+            dx = -dx;
+        }
+        if (y + dy > 650 || y + dy < circleRadius) {
+            dy = -dy;
+        }
+        x += dx;
+        y += dy;
+
+        circle.style.left = `${x}px`;
+        circle.style.top = `${y}px`;
+
+        requestAnimationFrame(move);
+    }
+
+    move();
+});
+
 document.addEventListener("mousemove", function (event) {
     const circle = document.querySelector(".gradient_circle_pointer");
     const pointerColor = window.getComputedStyle(document.documentElement).getPropertyValue("--pointer-color");

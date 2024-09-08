@@ -39,6 +39,11 @@ to this section's matching END comment to see page-specific styles.
     src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("opentype");
 }
 
+@font-face {
+    font-family: "Libre Caslon Text";
+    src: url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap") format("opentype");
+}
+
 .oxygen-light {
     font-family: "Oxygen", sans-serif;
     font-weight: 300;
@@ -57,6 +62,24 @@ to this section's matching END comment to see page-specific styles.
     font-style: normal;
 }
 
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .header_container {
     display: flex;
     top: 0;
@@ -67,12 +90,12 @@ to this section's matching END comment to see page-specific styles.
     /* align-content: end; */
     width: 100%;
     max-width: 1700px;
-    padding-top: 110px;
-    padding-bottom: 150px;
+    padding-top: 350px;
+    padding-bottom: 80px;
     padding-left: 70px;
     padding-right: 70px;
     height: auto;
-    gap: 60px;
+    gap: 40px;
     /*   border: 1px solid black; */
 }
 
@@ -112,9 +135,10 @@ to this section's matching END comment to see page-specific styles.
     margin-top: -350px;
     left: 50%;
     transform: translateX(-50%);
-    width: 700px;
+    width: 800px;
     /* Size of the gradient circle */
-    height: 700px;
+    height: 800px;
+    opacity: 0.8;
     /* Size of the gradient circle */
     background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%,
             #96BAFF 0%,
@@ -122,6 +146,24 @@ to this section's matching END comment to see page-specific styles.
     border-radius: 50%;
     /* Makes it a circle */
     z-index: -2;
+    /*   animation: moveGradient 50s infinite alternate; /* Animation */
+}
+
+.gradient_circle_alt {
+    display: block;
+    content: "";
+    position: absolute;
+    margin-top: -350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    /* Size of the gradient circle */
+    height: 700px;
+    opacity: 0.5;
+    /* Size of the gradient circle */
+    background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%, #9EC392 0%, rgba(254, 248, 237, 0.00) 100%);
+    /* Makes it a circle */
+    z-index: -3;
     /*   animation: moveGradient 50s infinite alternate; /* Animation */
 }
 
@@ -164,8 +206,11 @@ img {
 }
 
 .title_container h5 {
-    font-weight: 300;
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 60px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .subtitle_container {
@@ -203,8 +248,11 @@ img {
     margin-bottom: 12px;
     /* margin-left: 50px; */
     padding: 0px;
-    font-size: 26px;
+    font-size: 40px;
+    line-height: 58px;
     font-weight: 300;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
 }
 
 .all_work_container_center {
@@ -591,7 +639,7 @@ img {
     margin-left: 50px;
     margin-right: 50px;
     align-items: left;
-    gap: 17px;
+    gap: 12px;
     position: relative;
     /* cursor: pointer; */
     /* border: 1px solid black; */
@@ -960,14 +1008,13 @@ h1 {
 }
 
 .h1 {
-    font-family: "Oxygen", sans-serif;
+    font-family: "Libre Caslon Text", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 35px;
-    letter-spacing: 0.25px;
+    font-size: 30px;
     text-align: left;
     color: #1a3e2f;
-    line-height: 18px;
+    line-height: 28px;
     margin: 0;
     /*   font-family: "Oxygen"; */
 }
@@ -993,19 +1040,6 @@ h3 {
     font-size: 23px;
     text-align: left;
     color: #1a3e2f;
-    line-height: normal;
-    margin: 0;
-    /*   font-family: "Oxygen"; */
-}
-
-.h3_tech {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    letter-spacing: 0.25px;
-    font-size: 23px;
-    text-align: left;
-    color: #303030;
     line-height: normal;
     margin: 0;
     /*   font-family: "Oxygen"; */
@@ -1040,7 +1074,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Oxygen", sans-serif;
+    font-family: "Oxygen", serif;
     font-weight: 300;
     font-style: normal;
     font-size: 50px;
@@ -1389,6 +1423,7 @@ h7 {
     border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
+    border-radius: 10px;
 }
 
 .detail_box_lane {
@@ -1463,7 +1498,7 @@ h7 {
     font-size: 40px;
     text-align: center;
     color: #FFFFFF;
-    font-family: "Oxygen", sans-serif;
+    font-family: "Libre Caslon Text", serif;
     font-weight: 800;
     letter-spacing: 0.5px;
     /*   border: 1px solid black; */
@@ -1473,7 +1508,7 @@ h7 {
     /*   border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    font-family: "Oxygen", sans-serif;
+    font-family: "Libre Caslon Text", serif;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1514,7 +1549,6 @@ h7 {
     color: #4149A2;
     font-style: normal;
     font-weight: 200;
-
 }
 
 .project_details_smill .project_name {
@@ -1731,7 +1765,7 @@ h7 {
 }
 
 .project_process_title {
-    font-family: "Oxygen", sans-serif;
+    font-family: "Libre Caslon Text", serif;
     font-size: 37px;
     letter-spacing: 0.25px;
     color: #1a3e2f;
@@ -1866,7 +1900,12 @@ h7 {
     }
 
     .index_page nav {
-        padding-left: 30px;
+        padding-left: 20px;
+    }
+
+    nav {
+        position: absolute;
+        padding-left: 20px;
     }
 
     .menu-toggle {
@@ -1885,11 +1924,11 @@ h7 {
         flex-wrap: wrap;
         justify-content: left;
         height: auto;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 25px;
+        padding-right: 25px;
         padding-bottom: 60px;
         padding-top: 60px;
-        gap: 10px;
+        gap: 40px;
         overflow-x: auto;
     }
 
@@ -1902,21 +1941,22 @@ h7 {
     }
 
     .title_container h5 {
-        font-size: 40px;
+        font-size: 33px;
         width: 100%;
         margin-left: 0px;
+        line-height: 45px;
     }
 
     .subtitle_container {
-        margin-top: 50px;
         font-size: 14px;
         width: 100%;
         /* margin-left: -10px; */
     }
 
     .subtitle_container h6 {
-        font-size: 23px;
+        font-size: 25px;
         margin-left: 0px;
+        line-height: 40px;
     }
 
     .all_work_container {
@@ -1983,17 +2023,22 @@ h7 {
     }
 
     .project_name {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .details_title {
-        font-size: 25px;
-        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 200;
+        margin-bottom: 0px;
+    }
+
+    .project_info {
+        gap: 15px;
     }
 
     .details_info {
-        font-size: 20px;
-        font-weight: 100;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .project_des_container {
@@ -2048,6 +2093,13 @@ h7 {
             align-content: left; */
     }
 
+    .project_details_smill {
+        width: 100vw;
+        padding-left: 10px;
+        padding-right: 8px;
+        gap: 8px;
+    }
+
     .proposal_text {
         padding: 0px 0px;
         width: auto;
@@ -2056,6 +2108,9 @@ h7 {
 
     .detail_box {
         width: 100%;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .detail_box_infer {
@@ -2114,10 +2169,10 @@ h7 {
     }
 
     .question_text {
-        font-size: 28px;
+        font-size: 30px;
+        padding: 10px;
         width: auto;
         min-width: 50px;
-
         /* Decrease font size for smaller screens */
     }
 
@@ -2137,7 +2192,7 @@ h7 {
 
     .project_page_container {
         flex-wrap: wrap;
-        padding-top: 60px;
+        padding-top: 30px;
     }
 
     .intro_box {
