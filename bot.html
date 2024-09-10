@@ -15,8 +15,10 @@
         <div class="content" role="main">
             <nav>
                 <div class="menu-toggle" onclick="toggleMenu()">
+                    <!-- <span></span>
                     <span></span>
-                    <span></span>
+                    <span></span> -->
+                    <img class="nav_logo_mobile" src="assets/logo.png">
                 </div>
                 <div class="dropdown-menu">
                     <!-- <a class="nav_text" href="about.html">About</a> -->
@@ -30,10 +32,13 @@
                     <a class="nav_text" href="index.html">Back</a>
                 </div>
                 <div class="center-links">
-                    <a class="nav_text" href="index.html">Margaret Zhou</a>
+                    <a class="nav_logo" href="index.html">
+                        <img src="assets/logo.png" onmouseover="this.src='assets/logo.gif';"
+                            onmouseout="this.src='assets/logo.png';" />
+                    </a>
                 </div>
                 <div class="right-links">
-                    <a class="nav_text" href="index.html">Work</a>
+                    <!-- <a class="nav_text" href="index.html">Work</a> -->
                 </div>
             </nav>
 
@@ -66,9 +71,14 @@
                         <div class="project_role">
                             <div class="details_title">My Role:</div>
                             <div class="details_info">
-                                Storytelling, Front-end and Back-end Engineering
+                                Storytelling, Front-End Engineering
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="intro_box">
+                    <div class="intro_visual">
+                        <img src="assets/bot_gif.gif">
                     </div>
                 </div>
                 <div class="intro_box">
@@ -108,25 +118,26 @@
                     </div>
                     <div class="intro_visual">
                         <img src="assets/bot_ml5.png">
+                        <div class="intro_source">
+                            Source:
+                            <a href="https://docs.ml5js.org/#/reference/bodypose">ML5</a>
+                        </div>
+                        </img>
                     </div>
-                    <div class="intro_source">
-                        Source:
-                        <a href="https://docs.ml5js.org/#/reference/bodypose">ML5</a>
-                    </div>
+
                 </div>
                 <div class="intro_box">
                     <div class="intro_text">
-                        <div class="project_process_title">Introducing Bo-t Language
+                        <div class="project_process_title">Bo-t Language is a collaborative, dance platform
                         </div>
                         <div class="project_process_text">
-                            Bo-t Language is a collaborative, web-based dance party room platform where individuals can
-                            host and attend rooms to dance with others. It encourages and allows for real-time movement
-                            expression in remote settings.
+                            It encourages and allows for real-time movement
+                            expression in remote settings. Here's a video showing it in action:
                         </div>
                     </div>
                 </div>
-                <div class="render_box">
-                    <img src="assets/bot_render.svg" class="render_image" />
+                <div class="intro_visual">
+                    <img src="assets/bot_render.svg" />
                 </div>
                 <div class="intro_box">
                     <div class="proposal_video">

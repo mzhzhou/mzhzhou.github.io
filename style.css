@@ -34,7 +34,7 @@ to this section's matching END comment to see page-specific styles.
     display: none !important;
 }
 
-@font-face {
+/* @font-face {
     font-family: Oxygen;
     src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap") format("opentype");
 }
@@ -42,7 +42,7 @@ to this section's matching END comment to see page-specific styles.
 @font-face {
     font-family: "Libre Caslon Text";
     src: url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap") format("opentype");
-}
+} */
 
 .oxygen-light {
     font-family: "Oxygen", sans-serif;
@@ -292,8 +292,8 @@ img {
 
 .project_backing_whole_smill {
     position: relative;
-    /* width: 45vw;
-    max-width: 750px; */
+    /* width: 45vw; */
+    /* max-width: 750px; */
 }
 
 .project_backing_smill {
@@ -532,8 +532,16 @@ img {
     color: white;
 }
 
-/* .project_backing_whole_bot {
+.project_backing_whole_bot {
     position: relative;
+}
+
+.project_home_image_short {
+    object-fit: cover;
+    width: 100%;
+    height: 22vw;
+    border-radius: 10px;
+    border: 0.5px solid #c1c1c1;
 }
 
 .project_backing_bot {
@@ -580,7 +588,57 @@ img {
 .project_backing_bot:hover .project_tag {
     background-color: #5B724C;
     color: white;
-} */
+}
+
+.project_backing_whole_debi {
+    position: relative;
+}
+
+.project_backing_debi {
+    border: 1px solid #F1F1F1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.project_backing_whole_debi:hover {
+    animation: wiggle 0.3s ease;
+    animation-iteration-count: 1;
+}
+
+.project_backing_whole_debi:hover .project_backing_debi {
+    border: 0.2px solid #4E6CA8;
+    background-color: #eff5ff;
+}
+
+.project_backing_whole_debi:hover .project_home_image {
+    border: 0.2px solid #98abd2;
+}
+
+.project_backing_whole_debi:hover .project_backing_lower {
+    border: 0.2px solid #4E6CA8;
+    background-color: #eff5ff;
+}
+
+.project_backing_whole_debi:hover .project_lower_text {
+    color: #4E6CA8;
+}
+
+.project_backing_whole_debi:hover .h1 {
+    color: #4E6CA8;
+}
+
+.project_backing_whole_debi:hover .h4 {
+    color: #4E6CA8;
+    opacity: 70%;
+}
+
+.project_backing_debi:hover .project_tag {
+    background-color: #5B724C;
+    color: white;
+}
 
 @keyframes wiggle {
     0% {
@@ -588,15 +646,15 @@ img {
     }
 
     25% {
-        transform: rotate(0.5deg);
+        transform: rotate(0deg);
     }
 
     50% {
-        transform: rotate(-0.5deg);
+        transform: rotate(-0deg);
     }
 
     75% {
-        transform: rotate(0.3deg);
+        transform: rotate(0deg);
     }
 
     100% {
@@ -629,8 +687,9 @@ img {
 }
 
 .project_container {
-    width: 580px;
-    min-width: 100px;
+    width: 35vw;
+    height: auto;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -678,8 +737,10 @@ img {
 }
 
 .project_home_image {
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 10px;
+    border: 0.8px solid #efefef;
+    width: auto;
+    object-fit: cover;
 }
 
 .project_container:hover .gradient_circle_pointer {
@@ -1055,7 +1116,7 @@ h4 {
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    margin: 0;
+    margin-top: -10px;
     /*   font-family: "Oxygen"; */
 }
 
@@ -1069,7 +1130,7 @@ h4 {
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    margin: 0;
+    margin-top: -3px;
     /*   font-family: "Oxygen"; */
 }
 
@@ -1325,7 +1386,7 @@ h7 {
 .question_text {
     width: 50%;
     min-width: 400px;
-    font-family: "Oxygen", sans-serif;
+    font-family: "Libre Caslon Text", serif;
     font-style: normal;
     font-size: 40px;
     font-weight: 300;
@@ -1372,11 +1433,11 @@ h7 {
 
 .project_details_debi {
     width: 75%;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: #E2EBFB;
+    /* background: #8885D6; */
     /*   border: 1px solid black; */
 }
 
@@ -1488,6 +1549,23 @@ h7 {
     display: flex;
     flex-wrap: wrap;
     background: #FAE7DD;
+    z-index: 5;
+    border: 3px solid #FEF8ED;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.detail_box_debi {
+    width: calc((100% / 3) + 1px);
+    min-width: 300px;
+    height: 300px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background: #E8EEF8;
     z-index: 5;
     border: 3px solid #FEF8ED;
     margin-top: -1px;
@@ -1607,6 +1685,18 @@ h7 {
     color: #CA2D2D;
 }
 
+.project_details_debi .details_title {
+    color: #466CAD;
+}
+
+.project_details_debi .details_info {
+    color: #466CAD;
+}
+
+.project_details_debi .project_name {
+    color: #466CAD;
+}
+
 .intro_box {
     position: relative;
     width: 100%;
@@ -1618,7 +1708,7 @@ h7 {
     /* flex-wrap: wrap; */
     padding-top: 55px;
     padding-left: 90px;
-    padding-bottom: 45px;
+    padding-bottom: 0px;
     padding-right: 90px;
     justify-content: center;
     align-content: center;
@@ -1644,27 +1734,31 @@ h7 {
     justify-content: right;
     align-items: right;
     align-content: right;
-    top: -20px;
+    top: -25px;
     right: 0px;
     color: #1a3e2f;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 .intro_visual {
     position: relative;
-    max-width: 800px;
+    max-width: 750px;
     min-width: 300px;
     height: auto;
-    width: 70%;
+    width: auto;
     justify-content: center;
     align-items: center;
+    align-content: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 100px;
-    border-radius: 0;
+    gap: 35px;
+    border-radius: 5;
     /* border: 1px solid rgba(0, 0, 0, 0.20); */
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .intro_visual_row {
@@ -1678,10 +1772,14 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 60px;
     border-radius: 0;
     /* border: 1px solid rgba(0, 0, 0, 0.20); */
     padding: 20px;
+}
+
+.visual_image {
+    width: 190px;
 }
 
 .proposal_text_box {
@@ -1778,6 +1876,7 @@ h7 {
     font-size: 16px;
     color: #1a3e2f;
     margin-top: 30px;
+    margin-bottom: 20px;
     line-height: 24px;
 }
 
