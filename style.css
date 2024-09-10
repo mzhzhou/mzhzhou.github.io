@@ -864,11 +864,11 @@ nav {
     width: 100%;
     max-width: 1700px;
     height: 85px;
-    position: relative;
+    position: absolute;
     top: 0px;
     z-index: 20;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 100px;
     /* border: 1px solid black; */
 }
 
