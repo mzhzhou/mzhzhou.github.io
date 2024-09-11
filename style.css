@@ -1706,14 +1706,14 @@ h7 {
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
-    padding-top: 55px;
+    padding-top: 45px;
     padding-left: 90px;
     padding-bottom: 0px;
     padding-right: 90px;
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     background: #FFF8EB;
     margin-top: -1px;
 }
@@ -1757,7 +1757,7 @@ h7 {
     gap: 35px;
     border-radius: 5;
     /* border: 1px solid rgba(0, 0, 0, 0.20); */
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
 }
 
@@ -1876,7 +1876,7 @@ h7 {
     font-size: 16px;
     color: #1a3e2f;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 24px;
 }
 
