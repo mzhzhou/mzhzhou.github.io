@@ -2155,8 +2155,8 @@ h7 {
         flex-wrap: wrap;
         justify-content: left;
         height: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-bottom: 60px;
         padding-top: 150px;
         gap: 40px;
@@ -2260,7 +2260,7 @@ h7 {
     }
 
     .project_name {
-        font-size: 50px;
+        font-size: 43px;
     }
 
     .details_title {
@@ -2428,7 +2428,7 @@ h7 {
     }
 
     .intro_visual {
-        width: 70%;
+        width: 100%;
     }
 
     .hover_image {
@@ -2449,7 +2449,7 @@ h7 {
 
     .intro_box {
         width: 100%;
-        padding: 25px 20px;
+        padding: 25px 30px;
         margin-left: 1px;
         margin-top: -1px;
         align-items: center;
@@ -2473,6 +2473,10 @@ h7 {
     .project_process_text {
         width: 100%;
         margin-top: 20px;
+        line-height: 23px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        min-width: 50px;
     }
 
     .content {
@@ -2531,13 +2535,6 @@ h7 {
         /* Decrease font size for smaller screens */
     /* } */
 
-    .project_process_text,
-    .project_proposal_text {
-        font-size: 15px;
-        margin-bottom: 20px;
-        min-width: 50px;
-        /* Decrease font size for smaller screens */
-    }
 
     .proposal_video {
         height: auto;
