@@ -90,7 +90,8 @@ to this section's matching END comment to see page-specific styles.
     /* align-content: end; */
     width: 100%;
     max-width: 1700px;
-    padding-top: 450px;
+    /* padding-top: 450px; */
+    padding-top: 29vw;
     padding-bottom: 80px;
     padding-left: 70px;
     padding-right: 70px;
@@ -637,6 +638,106 @@ img {
 
 .project_backing_debi:hover .project_tag {
     background-color: #5B724C;
+    color: white;
+}
+
+.project_backing_multix {
+    border: 1px solid #F1F1F1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* cursor: pointer; */
+    z-index: 10;
+}
+
+.project_backing_whole_multix {
+    position: relative;
+}
+
+/* .project_backing_whole_multix:hover {
+    animation: wiggle 0.3s ease;
+    animation-iteration-count: 1;
+}
+
+.project_backing_whole_multix:hover .project_backing_culi {
+    border: 0.2px solid #1B912B;
+    background-color: #EBF2DD;
+}
+
+.project_backing_whole_multix:hover .project_home_image {
+    border: 0.2px solid rgba(27, 145, 43, 0.60);
+}
+
+.project_backing_whole_multix:hover .project_backing_lower {
+    border: 0.2px solid #1B912B;
+    background-color: #EBF2DD;
+}
+
+.project_backing_whole_multix:hover .project_lower_text {
+    color: #089178;
+}
+
+.project_backing_multix:hover .h1 {
+    color: #089178;
+}
+
+.project_backing_multix:hover .h4 {
+    color: #089178;
+    opacity: 70%;
+}
+
+.project_backing_multix:hover .project_tag {
+    background-color: #089178;
+    color: white;
+} */
+
+.project_backing_emsi {
+    border: 1px solid #F1F1F1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.project_backing_whole_emsi {
+    position: relative;
+}
+
+.project_backing_whole_emsi:hover {
+    animation: wiggle 0.3s ease;
+    animation-iteration-count: 1;
+}
+
+.project_backing_whole_emsi:hover .project_backing_emsi {
+    border: 0.2px solid #76527D;
+    background-color: #f9f8fd;
+}
+
+.project_backing_whole_emsi:hover .project_home_image {
+    border: 0.2px solid #76527D;
+}
+
+.project_backing_whole_emsi:hover .project_backing_lower {
+    border: 0.2px solid #76527D;
+    background-color: #f9f8fd;
+}
+
+.project_backing_whole_emsi:hover .project_lower_text {
+    color: #76527D;
+}
+
+.project_backing_emsi:hover .h1 {
+    color: #76527D;
+}
+
+.project_backing_emsi:hover .h4 {
+    color: #76527D;
+    opacity: 70%;
+}
+
+.project_backing_emsi:hover .project_tag {
+    background-color: #76527D;
     color: white;
 }
 
@@ -2026,7 +2127,7 @@ h7 {
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 60px;
-        padding-top: 60px;
+        padding-top: 150px;
         gap: 40px;
         overflow-x: auto;
     }
@@ -2087,6 +2188,12 @@ h7 {
         width: auto;
         height: auto;
         /* min-width: 50px; */
+    }
+
+    .project_home_image_short {
+        object-fit: cover;
+        width: 400px;
+        height: 220px;
     }
 
     .project_backing {
