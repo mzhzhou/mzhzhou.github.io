@@ -2124,8 +2124,8 @@ h7 {
         flex-wrap: wrap;
         justify-content: left;
         height: auto;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 60px;
         padding-top: 150px;
         gap: 40px;
@@ -2141,7 +2141,7 @@ h7 {
     }
 
     .title_container h5 {
-        font-size: 33px;
+        font-size: 30px;
         width: 100%;
         margin-left: 0px;
         line-height: 45px;
@@ -2154,15 +2154,15 @@ h7 {
     }
 
     .subtitle_container h6 {
-        font-size: 25px;
+        font-size: 23px;
         margin-left: 0px;
         line-height: 40px;
     }
 
     .all_work_container {
         width: auto;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
         min-width: 10px;
         justify-content: left;
         column-gap: 0px;
