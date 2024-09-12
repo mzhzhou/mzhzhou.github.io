@@ -1513,6 +1513,7 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /* background: #8885D6; */
     /*   border: 1px solid black; */
 }
@@ -1528,6 +1529,7 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /* background: #4294F0; */
     /*   border: 1px solid black; */
 }
@@ -1538,6 +1540,7 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /* background: #8885D6; */
     /*   border: 1px solid black; */
 }
@@ -1548,6 +1551,7 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /*   border: 1px solid black; */
 }
 
@@ -1557,6 +1561,7 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /*   border: 1px solid black; */
 }
 
@@ -1566,6 +1571,7 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /* background: #27A500; */
     /*   border: 1px solid black; */
 }
@@ -1603,6 +1609,7 @@ h7 {
     border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
+    border-radius: 10px;
 }
 
 .detail_box_infer {
@@ -1620,6 +1627,7 @@ h7 {
     border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
+    border-radius: 10px;
 }
 
 .detail_box_culinaid {
@@ -1637,6 +1645,7 @@ h7 {
     border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
+    border-radius: 10px;
 }
 
 .detail_box_bot {
@@ -1654,6 +1663,7 @@ h7 {
     border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
+    border-radius: 10px;
 }
 
 .detail_box_debi {
@@ -1671,6 +1681,7 @@ h7 {
     border: 3px solid #FEF8ED;
     margin-top: -1px;
     margin-left: -1px;
+    border-radius: 10px;
 }
 
 .project_name {
@@ -2317,8 +2328,36 @@ h7 {
 
     .project_details_smill {
         width: 100vw;
-        padding-left: 10px;
-        padding-right: 8px;
+        padding-left: 18px;
+        padding-right: 17px;
+        gap: 8px;
+    }
+
+    .project_details_debi {
+        width: 100vw;
+        padding-left: 18px;
+        padding-right: 17px;
+        gap: 8px;
+    }
+
+    .project_details_lane {
+        width: 100vw;
+        padding-left: 18px;
+        padding-right: 17px;
+        gap: 8px;
+    }
+
+    .project_details_culinaid {
+        width: 100vw;
+        padding-left: 18px;
+        padding-right: 17px;
+        gap: 8px;
+    }
+
+    .project_details_bot {
+        width: 100vw;
+        padding-left: 18px;
+        padding-right: 17px;
         gap: 8px;
     }
 
@@ -2331,24 +2370,49 @@ h7 {
     .detail_box {
         width: 100%;
         height: auto;
+        min-width: 50px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
     .detail_box_infer {
         width: 100%;
+        height: auto;
+        min-width: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .detail_box_lane {
         width: 100%;
+        height: auto;
+        min-width: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .detail_box_culinaid {
         width: 100%;
+        height: auto;
+        min-width: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .detail_box_bot {
         width: 100%;
+        height: auto;
+        min-width: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .detail_box_debi {
+        width: 100%;
+        height: auto;
+        min-width: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .intro_text {
@@ -2381,7 +2445,7 @@ h7 {
 
     .intro_box {
         width: 100%;
-        padding: 40px 20px;
+        padding: 25px 20px;
         margin-left: 1px;
         margin-top: -1px;
         align-items: center;
@@ -2404,6 +2468,7 @@ h7 {
 
     .project_process_text {
         width: 100%;
+        margin-top: 20px;
     }
 
     .content {
