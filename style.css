@@ -2065,8 +2065,24 @@ h7 {
         margin-top: -350px;
         left: 50%;
         transform: none;
-        width: 100px;
-        height: 100px;
+        width: 20px;
+        height: 20px;
+        background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%,
+                #96BAFF 0%,
+                rgba(150, 186, 255, 0.00) 100%);
+        border-radius: 50%;
+        z-index: -2;
+        display: none;
+    }
+
+    .gradient_circle_alt {
+        content: "";
+        position: absolute;
+        margin-top: -350px;
+        left: 50%;
+        transform: none;
+        width: 20px;
+        height: 20px;
         background-image: radial-gradient(40.97% 40.93% at 47.56% 47.41%,
                 #96BAFF 0%,
                 rgba(150, 186, 255, 0.00) 100%);
