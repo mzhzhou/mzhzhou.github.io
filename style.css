@@ -607,6 +607,7 @@ img {
 .project_backing_whole_debi:hover {
     animation: wiggle 0.3s ease;
     animation-iteration-count: 1;
+    /* rotate: -0.7deg; */
 }
 
 .project_backing_whole_debi:hover .project_backing_debi {
@@ -747,15 +748,15 @@ img {
     }
 
     25% {
-        transform: rotate(0deg);
+        transform: rotate(0.3deg);
     }
 
     50% {
-        transform: rotate(-0deg);
+        transform: rotate(-0.3deg);
     }
 
     75% {
-        transform: rotate(0deg);
+        transform: rotate(0.15deg);
     }
 
     100% {
