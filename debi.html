@@ -7,6 +7,10 @@
     <title>Hello World!</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="/script.js" defer></script>
 </head>
 
@@ -44,12 +48,20 @@
 
             <div class="project_page_container">
                 <!-- <div class="gradient_circle_pointer"></div> -->
-                <div class="question_container">
+
+                <div class="intro_box">
+                    <div class="intro_text">
+                        <div class="project_process_title">Can we help students learn about Gen AI biases in an open
+                            exploration setting?
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="question_container">
                     <div class="question_text">
                         Can we teach and uncover Gen AI biases in an open exploration setting?
                     </div>
-                </div>
-                <div class="project_details_debi">
+                </div> -->
+                <!-- <div class="project_details_debi">
                     <div class="detail_box_debi">
                         <div class="project_name">Debi</div>
                     </div>
@@ -75,11 +87,21 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="intro_box">
                     <div class="intro_text">
                         <div class="intro_image">
                             <img src="assets/debi_home.svg" />
+                        </div>
+                        <div class="debi">
+                            <div class="project_title">
+                                Debi
+                            </div>
+                            <div class="project_subtitle">
+                                This project took myself and Mayuri Sridhar 10 Weeks. My role was UI/UX Designer and
+                                part-time
+                                Front-end Engineer.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,11 +109,16 @@
                     <div class="intro_text">
                         <div class="project_process_title">Increasing Usage of LLMs</div>
                         <div class="project_process_text">
-                            With the growth and successes of large language models and machine learning, the integration
-                            of technology into our lives will continue to expand at faster rates than ever. This has a
-                            significant impact on students as AI models are introduced into education systems as early
-                            as elementary or middle school, with few explanations of the risks or biases involved with
-                            outputs. Even in the few circumstances where students are introduced to biases in AI models
+                            With the growth and successes of large language models and machine learning, the
+                            integration
+                            of technology into our lives will continue to expand at faster rates than ever. This has
+                            a
+                            significant impact on students as AI models are introduced into education systems as
+                            early
+                            as elementary or middle school, with few explanations of the risks or biases involved
+                            with
+                            outputs. Even in the few circumstances where students are introduced to biases in AI
+                            models
                             early on, the explanations are often framed as a problem that is beyond their control.
                         </div>
                         <div class="project_process_text">
@@ -110,12 +137,14 @@
                     <div class="intro_text">
                         <div class="project_process_title">Frustrations from Educators</div>
                         <div class="project_process_text">
-                            Educators felt a variety of feelings about the use of AI in their curriculum or by students
+                            Educators felt a variety of feelings about the use of AI in their curriculum or by
+                            students
                             when completing homework. We found that they often felt a lack of confidence and general
                             confusion about how to implement or address AI in their classrooms.
                         </div>
                         <div class="project_process_text">
-                            Additionally, educators often didn’t know how to explain to each other, or to their children
+                            Additionally, educators often didn’t know how to explain to each other, or to their
+                            children
                             that these tools are inherently flawed and should not be copied. Drawing upon these
                             insights, we felt it was
                             really important to have a way for students to learn and critically deconstruct various
@@ -130,7 +159,8 @@
                     <div class="intro_text">
                         <div class="project_process_title">Building on existing language education</div>
                         <div class="project_process_text">
-                            Early ideation was centered around a simple educational tool and idea: fridge magnets. We
+                            Early ideation was centered around a simple educational tool and idea: fridge magnets.
+                            We
                             wanted the tool to have a similar type of deconstruction and interactivity as standard
                             fridge magnets that children use to practice sentence-making. We were inspired by this
                             concept, along with the incredible work by researchers of Scratch in the Lifelong
@@ -154,10 +184,14 @@
                     <div class="intro_text">
                         <div class="project_process_title">Tool Development Process</div>
                         <div class="project_process_text">
-                            Our development process involved multiple iterations based on testing feedback with various
-                            users throughout. After synthesising the research findings, we completed 2-3 design sprints
-                            to get the design to a prototype stage. Mayuri built out the prototype in React and then we
-                            worked between Figma and React quite consistently. The below diagram shows our work process
+                            Our development process involved multiple iterations based on testing feedback with
+                            various
+                            users throughout. After synthesising the research findings, we completed 2-3 design
+                            sprints
+                            to get the design to a prototype stage. Mayuri built out the prototype in React and then
+                            we
+                            worked between Figma and React quite consistently. The below diagram shows our work
+                            process
                             over the weeks and provides some context for the challenges that will be discussed.
                         </div>
                     </div>
@@ -180,36 +214,46 @@
                         <div class="intro_visual">
                             <img src="assets/debi_magnet_iterations.svg" />
                         </div>
-                        <div class="project_process_text">In our earliest designs, we wanted the components to feel more
+                        <div class="project_process_text">In our earliest designs, we wanted the components to feel
+                            more
                             like broken apart pieces of a puzzle, so the designs were initially thought to be like
                             chains
                             that could be connected together. However, due to other moving pieces being defined, we
-                            ultimately decided on building the first prototype with a draggable form as the ‘magnet’.
+                            ultimately decided on building the first prototype with a draggable form as the
+                            ‘magnet’.
                             This
                             is shown below.
                         </div>
                         <div class="intro_visual">
                             <img src="assets/debi_proto1.svg" />
                         </div>
-                        <div class="project_process_text">After testing this prototype, we found that most users seemed
+                        <div class="project_process_text">After testing this prototype, we found that most users
+                            seemed
                             to
-                            struggle with the draggable feature, and it took a little bit of time until they discovered
+                            struggle with the draggable feature, and it took a little bit of time until they
+                            discovered
                             the
-                            functionality. This told us that the shadow was not helping. During the redesigning process,
+                            functionality. This told us that the shadow was not helping. During the redesigning
+                            process,
                             I
                             went back to the fridge magnets and thought about what indicated their draggability. It
                             seemed
-                            that the presence of the whiteboard or a magnetic surface was an important component of this
+                            that the presence of the whiteboard or a magnetic surface was an important component of
+                            this
                             interaction. Here is one exploration of that idea.
                         </div>
                         <div class="intro_visual">
                             <img src="assets/debi_iter_whiteboard.svg" />
                         </div>
-                        <div class="project_process_text">Ultimately, we decided that the magnet still allowed for more
-                            interactivity and play. Instead of using the shadow feature solely to indicate draggability,
+                        <div class="project_process_text">Ultimately, we decided that the magnet still allowed for
+                            more
+                            interactivity and play. Instead of using the shadow feature solely to indicate
+                            draggability,
                             we
-                            decided to change the input design to be loosely reminiscent of a whiteboard, with ‘ghost’
-                            magnets to indicate the final destination. This turned out to work very well as users could
+                            decided to change the input design to be loosely reminiscent of a whiteboard, with
+                            ‘ghost’
+                            magnets to indicate the final destination. This turned out to work very well as users
+                            could
                             immediately better understand the interaction intent. 
                         </div>
                         <div class="intro_visual">
@@ -256,8 +300,10 @@
                                     important. Key features need to be familiar enough to be easily usable, and
                                     adoptable
                                     with little friction.</li>
-                                <li> When designing for a workshop format, the lesson plan is just as important as the
-                                    functionality of the tool itself, and both need to be designed in conjunction.</li>
+                                <li> When designing for a workshop format, the lesson plan is just as important as
+                                    the
+                                    functionality of the tool itself, and both need to be designed in conjunction.
+                                </li>
                             </ul>
 
                         </div>

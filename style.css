@@ -1834,6 +1834,69 @@ h7 {
     color: #466CAD;
 }
 
+.project_title {
+    font-size: 37px;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    color: white;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+.project_subtitle {
+    font-size: 18px;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    color: #466CAD;
+    font-style: italic;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 27px;
+    opacity: 0.8;
+}
+
+.debi .project_title,
+.debi .project_subtitle {
+    color: #466CAD;
+}
+
+.smill .project_title,
+.smill .project_subtitle {
+    color: #4149A2;
+}
+
+.lane .project_title,
+.lane .project_subtitle {
+    color: #316FB3;
+}
+
+.multix .project_title,
+.multix .project_subtitle {
+    color: #316FB3;
+}
+
+.culinaid .project_title,
+.culinaid .project_subtitle {
+    color: #1B912B;
+}
+
+.infernodes .project_title,
+.infernodes .project_subtitle {
+    color: #5B724C;
+}
+
+.bot .project_title,
+.bot .project_subtitle {
+    color: #CA2D2D;
+}
+
 .intro_box {
     position: relative;
     width: 100%;
