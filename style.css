@@ -1224,11 +1224,12 @@ h3 {
     font-weight: 200;
     font-style: normal;
     letter-spacing: 0.25px;
-    font-size: 23px;
+    font-size: 20px;
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
     /*   font-family: "Oxygen"; */
 }
 
@@ -1931,15 +1932,17 @@ h7 {
 
 .intro_source {
     position: relative;
-    font-size: 12px;
-    justify-content: right;
-    align-items: right;
-    align-content: right;
-    top: -25px;
+    font-size: 15px;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    top: -15px;
     right: 0px;
     color: #1a3e2f;
     margin: 0px;
     padding: 0px;
+    opacity: 0.6;
+    font-style: italic;
 }
 
 
@@ -1950,8 +1953,9 @@ h7 {
     height: auto;
     width: auto;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     align-content: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1973,7 +1977,8 @@ h7 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 60px;
+    row-gap: 30px;
+    column-gap: 40px;
     border-radius: 0;
     /* border: 1px solid rgba(0, 0, 0, 0.20); */
     padding: 20px;
