@@ -180,7 +180,7 @@ img {
     /* Adjust size as needed */
     border-radius: 50%;
     top: 0px;
-    position: absolute;
+    position: fixed;
     pointer-events: none;
     /* Ensures the circle doesn't interfere with mouse events */
     background: radial-gradient(50% 50% at 50% 50%,
@@ -1925,6 +1925,7 @@ h7 {
     min-width: 300px;
     max-width: 750px;
     position: relative;
+    /* margin-bottom: 20px; */
     /* top: 60px; */
     /* margin-left: 90px; */
     /* margin-bottom: 150px; */
