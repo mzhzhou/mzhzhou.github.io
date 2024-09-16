@@ -2063,6 +2063,11 @@ h7 {
     /* border: 1px solid rgba(0, 0, 0, 0.20); */
 }
 
+.proposal_gif {
+    max-height: 500px;
+    border-radius: calc(45px - ((100vw / 100) / 2));
+}
+
 .project_process_title {
     font-family: "Libre Caslon Text", serif;
     font-size: 37px;
@@ -2661,6 +2666,11 @@ h7 {
         text-align: center;
         align-items: center;
         /* border: 1px solid rgba(0, 0, 0, 0.20); */
+    }
+
+    .proposal_gif {
+        border-radius: calc(30px - (100vw / 100) * 0.1);
+        /* border-radius: 0px; */
     }
 
     .feature {
