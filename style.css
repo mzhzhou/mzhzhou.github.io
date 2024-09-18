@@ -1625,7 +1625,11 @@ h7 {
     font-family: "Libre Caslon Text", serif;
     font-weight: 800;
     /* letter-spacing: 0.5px; */
-    margin-top: 30px;
+    margin-top: 60px;
+}
+
+.project_title_logo {
+    height: 50px;
 }
 
 .project_subtitle {
@@ -1639,9 +1643,10 @@ h7 {
     font-family: "Oxygen", sans-serif;
     font-weight: 300;
     /* letter-spacing: 0px; */
-    line-height: 27px;
+    line-height: 28px;
     opacity: 0.8;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 /* .debi .project_title,
@@ -1695,7 +1700,7 @@ h7 {
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
     background: #FFF8EB;
     margin-top: -1px;
 }
@@ -1745,6 +1750,20 @@ h7 {
     /* border: 1px solid rgba(0, 0, 0, 0.20); */
     padding-top: 15px;
     padding-bottom: 30px;
+}
+
+.intro_video {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-items: left;
+    gap: 12px;
+    position: relative;
 }
 
 .intro_visual_row {
@@ -1861,15 +1880,17 @@ h7 {
     color: #1a3e2f;
     font-weight: 500px;
     margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 .project_process_text {
     font-family: "Oxygen", sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     color: #1a3e2f;
     margin-top: 30px;
     margin-bottom: 10px;
-    line-height: 24px;
+    line-height: 25px;
+    opacity: 0.9;
 }
 
 .project_proposal_title {
