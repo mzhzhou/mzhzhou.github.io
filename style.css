@@ -1016,7 +1016,7 @@ h3 {
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 10px;
     /*   font-family: "Oxygen"; */
 }
@@ -1839,8 +1839,10 @@ h7 {
 .proposal_video {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 500px;
+    top: -20px;
     bottom: 100px;
+    /* margin: 0px; */
     /* border: 1px solid black; */
 }
 
