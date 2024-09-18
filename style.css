@@ -1621,10 +1621,10 @@ h7 {
     justify-content: left;
     align-items: left;
     align-content: left;
-    color: white;
+    color: #1a3e2f;
     font-family: "Libre Caslon Text", serif;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    /* letter-spacing: 0.5px; */
     margin-top: 30px;
 }
 
@@ -1634,17 +1634,17 @@ h7 {
     justify-content: left;
     align-items: left;
     align-content: left;
-    color: #466CAD;
+    color: #1a3e2f;
     font-style: italic;
     font-family: "Oxygen", sans-serif;
     font-weight: 300;
-    letter-spacing: 0px;
+    /* letter-spacing: 0px; */
     line-height: 27px;
     opacity: 0.8;
     margin-top: 5px;
 }
 
-.debi .project_title,
+/* .debi .project_title,
 .debi .project_subtitle {
     color: #466CAD;
 }
@@ -1677,7 +1677,7 @@ h7 {
 .bot .project_title,
 .bot .project_subtitle {
     color: #CA2D2D;
-}
+} */
 
 .intro_box {
     position: relative;
