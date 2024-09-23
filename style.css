@@ -1723,7 +1723,7 @@ h7 {
     justify-content: left;
     align-items: left;
     align-content: left;
-    top: -15px;
+    top: -20px;
     right: 0px;
     color: #1a3e2f;
     margin: 0px;
@@ -1749,7 +1749,7 @@ h7 {
     gap: 35px;
     border-radius: 5;
     /* border: 1px solid rgba(0, 0, 0, 0.20); */
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 30px;
 }
 
