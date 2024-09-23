@@ -91,12 +91,12 @@ to this section's matching END comment to see page-specific styles.
     width: 100%;
     max-width: 1700px;
     /* padding-top: 450px; */
-    padding-top: 25vw;
-    padding-bottom: 80px;
+    padding-top: 20vw;
+    padding-bottom: 10vw;
     padding-left: 70px;
     padding-right: 70px;
     height: auto;
-    gap: 40px;
+    gap: 4vw;
     /*   border: 1px solid black; */
 }
 
@@ -207,7 +207,7 @@ img {
 }
 
 .title_container h5 {
-    font-size: 55px;
+    font-size: 60px;
     line-height: 75px;
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
@@ -245,7 +245,7 @@ img {
 }
 
 .subtitle_container h6 {
-    margin-top: 20px;
+    margin-top: 2vw;
     margin-bottom: 12px;
     /* margin-left: 50px; */
     padding: 0px;
@@ -2120,7 +2120,7 @@ h7 {
         height: auto;
         padding-left: 30px;
         padding-right: 30px;
-        padding-bottom: 60px;
+        padding-bottom: 1vw;
         padding-top: 150px;
         gap: 40px;
         overflow-x: auto;
@@ -2135,10 +2135,10 @@ h7 {
     }
 
     .title_container h5 {
-        font-size: 30px;
+        font-size: 26px;
         width: 100%;
         margin-left: 0px;
-        line-height: 45px;
+        line-height: 40px;
     }
 
     .subtitle_container {
@@ -2148,7 +2148,7 @@ h7 {
     }
 
     .subtitle_container h6 {
-        font-size: 23px;
+        font-size: 26px;
         margin-left: 0px;
         line-height: 40px;
     }
