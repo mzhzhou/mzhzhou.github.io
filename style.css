@@ -1626,6 +1626,7 @@ h7 {
     font-weight: 800;
     /* letter-spacing: 0.5px; */
     margin-top: 60px;
+    width: auto;
 }
 
 .project_title_logo {
@@ -1753,7 +1754,7 @@ h7 {
 }
 
 .intro_video {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -2379,7 +2380,7 @@ h7 {
     }
 
     .intro_text {
-        width: auto;
+        width: 100%;
         font-size: 20px;
         text-align: left;
         /* margin-bottom: 40px; */
@@ -2451,6 +2452,37 @@ h7 {
 
     .intro_box {
         flex-wrap: wrap;
+    }
+
+    .debi {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .project_title {
+        font-size: 40px;
+        width: auto;
+        min-width: 50px;
+    }
+
+    .project_subtitle {
+        font-size: 18px;
+        width: 100%;
+        width: 100%;
+        margin-top: 20px;
+        line-height: 27px;
+        margin-bottom: 20px;
+        min-width: 50px;
+    }
+
+    .intro_video {
+        width: 100%;
+        min-width: 50px;
+        max-width: 630px;
+        /* margin-left: 60px; */
+        /* margin-right: 60px; */
+        align-items: left;
+        position: relative;
     }
 
     .proposal_box {
