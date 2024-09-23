@@ -1767,6 +1767,14 @@ h7 {
     position: relative;
 }
 
+.index_video {
+    width: 100%;
+    /* min-width: 50px; */
+    /* max-width: 300px; */
+    display: flex;
+    position: relative;
+}
+
 /* .intro_visual_row {
     position: relative;
     max-width: 100%;
@@ -2482,6 +2490,13 @@ h7 {
         /* margin-left: 60px; */
         /* margin-right: 60px; */
         align-items: left;
+        position: relative;
+    }
+
+    .index_video {
+        width: 100%;
+        min-width: 50px;
+        max-width: 700px;
         position: relative;
     }
 
