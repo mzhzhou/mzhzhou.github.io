@@ -1925,11 +1925,11 @@ h2 {
 .project_process_title {
     font-family: "Libre Caslon Text", serif;
     font-size: 37px;
-    letter-spacing: 0.25px;
     color: #1a3e2f;
     font-weight: 500px;
     margin-top: 0px;
     margin-bottom: 15px;
+    line-height: normal;
 }
 
 .project_process_text {
@@ -2122,10 +2122,10 @@ h2 {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 35px;
         width: 100%;
         margin-left: 0px;
-        line-height: 41px;
+        line-height: 45px;
     }
 
     .subtitle_container {
@@ -2146,7 +2146,7 @@ h2 {
         text-decoration-thickness: 1px;
         font-family: "Oxygen", sans-serif;
         font-weight: 200;
-        font-size: 26px;
+        font-size: 35px;
     }
 
     .all_work_container {
@@ -2464,18 +2464,19 @@ h2 {
     }
 
     .project_title {
-        font-size: 40px;
+        font-size: 38px;
         width: auto;
         min-width: 50px;
+        margin-top: 5px;
     }
 
     .project_subtitle {
         font-size: 18px;
         width: 100%;
         width: 100%;
-        margin-top: 20px;
-        line-height: 27px;
-        margin-bottom: 20px;
+        margin-top: 8px;
+        line-height: 25px;
+        margin-bottom: 5px;
         min-width: 50px;
     }
 
@@ -2522,6 +2523,7 @@ h2 {
         font-size: 30px;
         width: auto;
         min-width: 50px;
+        line-height: normal;
         /* Decrease font size for smaller screens */
     }
 
