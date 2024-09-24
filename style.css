@@ -91,12 +91,12 @@ to this section's matching END comment to see page-specific styles.
     width: 100%;
     max-width: 1700px;
     /* padding-top: 450px; */
-    padding-top: 20vw;
-    padding-bottom: 10vw;
+    padding-top: 33vw;
+    padding-bottom: 80px;
     padding-left: 70px;
     padding-right: 70px;
     height: auto;
-    gap: 4vw;
+    gap: 60px;
     /*   border: 1px solid black; */
 }
 
@@ -115,6 +115,15 @@ to this section's matching END comment to see page-specific styles.
     height: 950px;
     padding: 0px;
     /*   border: 1px solid black; */
+}
+
+.header_link {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 200;
+    font-size: 50px;
 }
 
 .selected_works {
@@ -206,14 +215,6 @@ img {
     /*   border: 1px solid black; */
 }
 
-.title_container h5 {
-    font-size: 60px;
-    line-height: 75px;
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .subtitle_container {
     /* margin-top: 100px; */
     margin-bottom: 0px;
@@ -242,18 +243,6 @@ img {
     margin-left: 60px;
     margin-bottom: 20px;
     /*   font-family: "Oxygen"; */
-}
-
-.subtitle_container h6 {
-    margin-top: 2vw;
-    margin-bottom: 12px;
-    /* margin-left: 50px; */
-    padding: 0px;
-    font-size: 55px;
-    line-height: 75px;
-    font-weight: 400;
-    font-family: "Libre Caslon Text", serif;
-    font-style: normal;
 }
 
 .all_work_container_center {
@@ -969,7 +958,7 @@ p {
     font-family: "Oxygen", sans-serif;
 }
 
-h1 {
+/* h1 {
     font-family: "Oxygen", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -979,10 +968,9 @@ h1 {
     color: #1a3e2f;
     line-height: 18px;
     margin: 0;
-    /*   font-family: "Oxygen"; */
-}
+} */
 
-.h1 {
+.project_home_title {
     font-family: "Libre Caslon Text", serif;
     font-weight: 600;
     font-style: normal;
@@ -991,10 +979,9 @@ h1 {
     color: #1a3e2f;
     line-height: 28px;
     margin: 0;
-    /*   font-family: "Oxygen"; */
 }
 
-h2 {
+/* h2 {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -1004,10 +991,9 @@ h2 {
     color: #1a3e2f;
     line-height: normal;
     margin: 0;
-    /*   font-family: "Oxygen"; */
-}
+} */
 
-h3 {
+/* h3 {
     font-family: "Oxygen", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -1018,10 +1004,9 @@ h3 {
     line-height: normal;
     margin-top: 35px;
     margin-bottom: 10px;
-    /*   font-family: "Oxygen"; */
-}
+} */
 
-h4 {
+/* h4 {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -1032,10 +1017,9 @@ h4 {
     color: #1a3e2f;
     line-height: normal;
     margin-top: -10px;
-    /*   font-family: "Oxygen"; */
-}
+} */
 
-.h4 {
+.project_home_subtitle {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -1046,15 +1030,14 @@ h4 {
     color: #1a3e2f;
     line-height: normal;
     margin-top: -3px;
-    /*   font-family: "Oxygen"; */
 }
 
-h5 {
-    font-family: "Oxygen", serif;
+h1 {
+    font-size: 50px;
+    font-family: "Libre Caslon Text", serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 50px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
@@ -1062,22 +1045,26 @@ h5 {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+
 }
 
-h6 {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 300;
+h2 {
+    font-size: 50px;
+    /* line-height: 80px; */
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 200;
     font-style: normal;
-    font-size: 30px;
-    letter-spacing: 0.5px;
-    /*   text-align: left; */
+    letter-spacing: 0px;
+    text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    /* margin: 50px; */
-    /*   font-family: "Oxygen"; */
+    margin-top: 2vw;
+    margin-bottom: 12px;
+    /* margin-left: 50px; */
+    padding: 0px;
 }
 
-h7 {
+.footer_text {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -1086,7 +1073,7 @@ h7 {
     /*   font-family: "Oxygen"; */
 }
 
-.footer_text {
+.footer_container {
     /* margin-left: 20px; */
     /* margin-top: 100px; */
     font-family: "Oxygen", sans-serif;
@@ -2083,9 +2070,9 @@ h7 {
         z-index: -10;
     }
 
-    .h1 {
+    /* .h1 {
         line-height: 37px;
-    }
+    } */
 
     .left-links,
     .center-links,
@@ -2126,19 +2113,19 @@ h7 {
         overflow-x: auto;
     }
 
-    .header_container h3 {
+    /* .header_container h3 {
         margin-left: 40px;
-    }
+    } */
 
     .title_container {
         width: 100%;
     }
 
-    .title_container h5 {
-        font-size: 26px;
+    h1 {
+        font-size: 30px;
         width: 100%;
         margin-left: 0px;
-        line-height: 40px;
+        line-height: 41px;
     }
 
     .subtitle_container {
@@ -2147,10 +2134,19 @@ h7 {
         /* margin-left: -10px; */
     }
 
-    .subtitle_container h6 {
+    h2 {
         font-size: 26px;
         margin-left: 0px;
         line-height: 40px;
+    }
+
+    .header_link {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1px;
+        font-family: "Oxygen", sans-serif;
+        font-weight: 200;
+        font-size: 26px;
     }
 
     .all_work_container {
@@ -2210,17 +2206,17 @@ h7 {
         margin-top: 5px;
     }
 
-    .project_container h1 {
-        font-size: 30px;
+    .project_container .project_home_title {
+        font-size: 26px;
     }
 
-    .project_container h3 {
-        font-size: 20px;
+    .project_container .project_home_subtitle {
+        font-size: 17px;
     }
 
-    .project_container h4 {
-        font-size: 22px;
-    }
+    /* .project_container h4 {
+        font-size: 10px;
+    } */
 
     .project_lower_text_container {
         padding-left: 30px;
@@ -2651,6 +2647,7 @@ h7 {
         position: relative;
         /* Adjust margin */
     }
+
 }
 
 /******************************************************************************
@@ -2675,18 +2672,13 @@ h7 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* max-width: 1700px; */
     margin: 0 auto;
     padding: 0;
     flex-grow: 1;
-    /*   background-color: #F5F1EC; */
-    /* border: 1px solid black; */
 }
 
 footer {
     display: flex;
-    /* position: absolute;
-    bottom: 0px; */
     margin-top: 80px;
     text-align: center;
     align-items: center;
