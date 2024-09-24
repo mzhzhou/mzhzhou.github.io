@@ -126,6 +126,10 @@ to this section's matching END comment to see page-specific styles.
     font-size: 50px;
 }
 
+.header_link:hover {
+    font-style: italic;
+}
+
 .selected_works {
     width: auto;
     height: auto;
@@ -1045,7 +1049,13 @@ h1 {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+}
 
+.h1_italic {
+    display: inline-flex;
+    margin-left: -15px;
+    transform: skewX(-15deg);
+    transform-origin: left;
 }
 
 h2 {
