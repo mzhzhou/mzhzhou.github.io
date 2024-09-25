@@ -117,6 +117,28 @@ to this section's matching END comment to see page-specific styles.
     /*   border: 1px solid black; */
 }
 
+.header_hover {
+    font-size: 50px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1a3e2f;
+    line-height: normal;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.header_hover:hover {
+    text-decoration: wavy underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+}
+
 .header_link {
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -186,7 +208,7 @@ img {
     height: auto;
 }
 
-.gradient_circle_pointer {
+#gradient_circle_pointer {
     width: 50px;
     /* Adjust size as needed */
     height: 50px;
@@ -202,7 +224,75 @@ img {
     transition: transform 0.1s linear;
     /* Smooth transition for better visual effect */
     z-index: 20;
-    transform: translate(-50%, -50%);
+    display: none;
+    /* transform: translate(-50%, -50%); */
+}
+
+#game_text {
+    position: absolute;
+    top: 30px;
+    /* right: 130px; */
+    display: inline-flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    color: #1a3e2f;
+    line-height: 18px;
+    opacity: 0.6;
+    display: none;
+}
+
+#game_start_button {
+    position: absolute;
+    top: 30px;
+    /* right: 100px; */
+    display: inline-flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22.759px;
+    border: 0.7px solid var(--Main, #1A3E2F);
+    font-family: "Oxygen", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    color: #1a3e2f;
+    line-height: 18px;
+    opacity: 0.6;
+}
+
+#game_start_button:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+
+.new_circle {
+    position: absolute;
+    /* Ensure circles are positioned absolutely */
+    width: 60px;
+    /* Circle diameter */
+    height: 60px;
+    /* Circle diameter */
+    border: 1px dashed #1a3e2f;
+    opacity: 0.3;
+    /* background-color: white; */
+    /* Circle color */
+    border-radius: 50%;
+    /* Makes it a circle */
+    /* transition: left 0.1s linear, top 0.1s linear; */
+    z-index: 5;
+    /* Smooth movement */
+}
+
+.circle_overlap {
+    opacity: 1;
+    /* border-style: solid; */
 }
 
 .title_container {
@@ -1049,13 +1139,6 @@ h1 {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-}
-
-.h1_italic {
-    display: inline-flex;
-    margin-left: -15px;
-    transform: skewX(-15deg);
-    transform-origin: left;
 }
 
 h2 {
@@ -2080,6 +2163,10 @@ h2 {
         z-index: -10;
     }
 
+    #game_start_button {
+        display: none;
+    }
+
     /* .h1 {
         line-height: 37px;
     } */
@@ -2132,6 +2219,13 @@ h2 {
     }
 
     h1 {
+        font-size: 35px;
+        width: 100%;
+        margin-left: 0px;
+        line-height: 45px;
+    }
+
+    .header_hover {
         font-size: 35px;
         width: 100%;
         margin-left: 0px;
