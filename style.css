@@ -2116,6 +2116,98 @@ h2 {
     text-align: left;
 }
 
+.locus_header_container {
+    max-width: 1700px;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: left;
+    align-content: left;
+}
+
+.locus_header {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 1700px;
+    padding-top: 15vw;
+    padding-bottom: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+    height: auto;
+    gap: 13vw;
+    /* border: 1px solid black; */
+}
+
+.locus_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.locus_subtitle {
+    color: var(--Main, #1A3E2F);
+    font-family: Oxygen;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.locus_gallery_container {
+    max-width: 1700px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 69px;
+    /* border: 1px solid black; */
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.gallery_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 42px;
+    align-self: stretch;
+}
+
+.gallery_image {
+    width: 50%;
+}
+
+.gallery_text {
+    display: flex;
+    width: 357px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.gallery_title {
+    color: var(--Main, #1A3E2F);
+    align-self: stretch;
+    font-family: "Libre Caslon Text";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.gallery_subtitle {
+    color: var(--Main, #1A3E2F);
+    align-self: stretch;
+    font-family: Oxygen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 @media only screen and (max-width: 700px) {
 
     .gradient_circle {
