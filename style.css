@@ -749,7 +749,7 @@ img {
 }
 
 .project_home_image {
-    border-radius: 10px;
+    border-radius: 5px;
     border: 0.8px solid #efefef;
     width: auto;
     object-fit: cover;
@@ -1123,7 +1123,8 @@ p {
     text-align: left;
     color: #1a3e2f;
     line-height: normal;
-    margin-top: -3px;
+    margin-top: -4px;
+    margin-bottom: 3px;
 }
 
 h1 {
@@ -1853,6 +1854,10 @@ h2 {
     /* max-width: 300px; */
     display: flex;
     position: relative;
+    border-radius: 5px;
+    border: 0.8px solid #efefef;
+    width: auto;
+    object-fit: cover;
 }
 
 /* .intro_visual_row {
