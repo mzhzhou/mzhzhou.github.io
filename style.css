@@ -2129,7 +2129,7 @@ h2 {
 .locus_header {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     max-width: 1700px;
     padding-top: 15vw;
     padding-bottom: 150px;
