@@ -2193,7 +2193,7 @@ h2 {
     align-self: stretch;
     font-family: "Libre Caslon Text";
     font-size: 30px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 400;
     line-height: normal;
 }
