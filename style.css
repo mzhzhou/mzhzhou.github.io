@@ -693,8 +693,6 @@ img {
 
 .project_backing_whole_emsi:hover {
     rotate: 0.8deg;
-    animation: wiggle 0.3s ease;
-    animation-iteration-count: 1;
 }
 
 .project_backing_whole_emsi:hover .project_backing_emsi {
