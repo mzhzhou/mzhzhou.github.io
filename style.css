@@ -91,7 +91,7 @@ to this section's matching END comment to see page-specific styles.
     width: 100%;
     max-width: 1700px;
     /* padding-top: 450px; */
-    padding-top: 33vw;
+    padding-top: 32vw;
     padding-bottom: 80px;
     padding-left: 70px;
     padding-right: 70px;
@@ -118,7 +118,7 @@ to this section's matching END comment to see page-specific styles.
 }
 
 .header_hover {
-    font-size: 50px;
+    font-size: 45px;
     font-family: "Libre Caslon Text", serif;
     font-weight: 300;
     font-style: normal;
@@ -145,7 +145,7 @@ to this section's matching END comment to see page-specific styles.
     text-decoration-thickness: 2px;
     font-family: "Oxygen", sans-serif;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .header_link:hover {
@@ -1126,7 +1126,7 @@ p {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
     font-family: "Libre Caslon Text", serif;
     font-weight: 300;
     font-style: normal;
