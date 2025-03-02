@@ -136,11 +136,13 @@ to this section's matching END comment to see page-specific styles.
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    text-decoration: none;
+    text-decoration: wavy underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
 
 .header_hover:hover {
-    text-decoration: wavy underline;
+    text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
