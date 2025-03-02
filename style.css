@@ -282,15 +282,15 @@ img {
 
 @keyframes flashRed {
     0% {
-        border: 3.5px dashed #8c8c8c3b;
+        border: 3px dashed #8c8c8c3b;
     }
 
     50% {
-        border: 3.5px dashed #b99ae4;
+        border: 3px dashed #b99ae4;
     }
 
     100% {
-        border: 3.5px dashed #8c8c8c3b;
+        border: 3px dashed #8c8c8c3b;
     }
 }
 
