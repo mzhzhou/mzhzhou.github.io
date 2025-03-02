@@ -134,20 +134,33 @@ document.addEventListener("DOMContentLoaded", function () {
     const spawnCirclesBtn = document.getElementById("game_start_button");
     const gradientCirclePointer = document.getElementById("gradient_circle_pointer");
     const gameText = document.getElementById("game_text");
+    const levelDisplay = document.querySelector(".level_display");
     let staticCircle = null;
+    let level = 1;
 
     // Movement parameters
     const moveStep = 5; // Pixels to move for each mouse movement
     const proximityThreshold = 100; // Distance in pixels to trigger movement
-    const overlapDuration = 2000; // Duration in milliseconds (5 seconds)
+    const overlapDuration = 1000; // Duration in milliseconds (5 seconds)
 
     // Function to place the circle at a random position
     function placeCircleRandomly(circle) {
-        const x = Math.floor(Math.random() * (window.innerWidth - 50)); // 50 is the circle's diameter
-        const y = Math.floor(Math.random() * (window.innerHeight - 50));
+        const container = document.querySelector(".header_container");
+
+        if (!container) {
+            console.error("Container with class 'header_container' not found.");
+            return;
+        }
+
+        const containerRect = container.getBoundingClientRect();
+
+        const x = Math.floor(Math.random() * (containerRect.width - 50)) + containerRect.left;
+        const y = Math.floor(Math.random() * (containerRect.height - 50)) + containerRect.top;
+
         circle.style.left = `${x}px`;
         circle.style.top = `${y}px`;
     }
+
 
     // Function to spawn circles
     function spawnCircles() {
@@ -171,6 +184,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Reset previous mouse position
         previousMousePosition = { x: null, y: null };
+
+        // Reset level on new game start
+        level = 1;
+        updateLevelDisplay();
+    }
+
+    function updateLevelDisplay() {
+        levelDisplay.textContent = ` Level ${level}`;
     }
 
     // Previous mouse position for the gradientCirclePointer
@@ -235,6 +256,8 @@ document.addEventListener("DOMContentLoaded", function () {
             overlapTimer = setTimeout(() => {
                 placeCircleRandomly(staticCircle); // Respawn staticCircle in a new location
                 staticCircle.classList.remove("circle_overlap"); // Remove the overlapping class
+                level++;
+                updateLevelDisplay();
             }, overlapDuration);
         } else {
             // If there's no overlap, clear the timer and ensure no overlap class is present

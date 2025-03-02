@@ -255,6 +255,14 @@ img {
     display: none;
 }
 
+.level_display {
+    margin-top: 30px;
+    align-items: right;
+    text-align: right;
+    color: #1a3e2f;
+    font-size: 25px;
+}
+
 #game_start_button {
     position: absolute;
     top: 30px;
@@ -305,9 +313,10 @@ img {
     animation: flashRed 1s infinite;
 }
 
-circle_overlap {
-    opacity: 1;
-    border: 3.5px solid #eb4545;
+.circle_overlap {
+    /* opacity: 1; */
+    border: 3px dashed #f88585 !important;
+    /* border: 3px solid #b99ae4 !important; */
 }
 
 .title_container {
@@ -358,15 +367,20 @@ circle_overlap {
     /* display: flex; */
     width: 100%;
     /* border-top: 1px solid #C6D2C8; */
-    background-color: #FFF8EB;
+    /* background-color: #f8f1e3; */
     justify-content: center;
+    /* border-radius: 40px; */
 }
 
 .all_work_container {
+    background-color: #f8f1e5;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 70px;
-    margin-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
     grid-gap: 30px;
