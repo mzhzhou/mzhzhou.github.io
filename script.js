@@ -250,7 +250,19 @@ document.addEventListener("DOMContentLoaded", function () {
     body.addEventListener("mousemove", movePointerDest);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let leftLinks = document.querySelector(".left-links");
+    let hasScrolled = false;
 
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 50 && !hasScrolled) {
+            leftLinks.classList.add("show"); // Show left links
+            hasScrolled = true; // Prevent further hiding
+        }
+    });
+});
 
 
 function navToProject(url) {
