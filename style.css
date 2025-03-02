@@ -2347,6 +2347,8 @@ h2 {
     .project_container {
         width: auto;
         min-width: 50px;
+        height: auto;
+        min-height: 50px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
