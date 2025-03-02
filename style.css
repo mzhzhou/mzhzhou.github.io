@@ -2331,11 +2331,14 @@ h2 {
 
     .all_work_container {
         width: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        margin-top: 50px;
         min-width: 10px;
         justify-content: left;
         column-gap: 0px;
+        background-color: #FFF8EB;
     }
 
     .project_container {
