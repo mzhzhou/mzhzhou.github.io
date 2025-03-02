@@ -840,7 +840,7 @@ nav {
     color: #1a3e2f;
     background-color: rgba(254, 248, 237, 0.9);
     padding: 10px 20px;
-    width: 100vw;
+    width: 100%;
     max-width: 1700px;
     height: 85px;
     position: fixed;
@@ -871,7 +871,7 @@ nav {
     max-width: 1700px;
     height: 85px;
     position: absolute;
-    top: 0px;
+    top: 10px;
     z-index: 20;
     padding-left: 70px;
     padding-right: 70px;
@@ -905,12 +905,12 @@ nav a {
     /*   border: 1px solid black; */
 }
 
-.left-links {
+.index_page .left-links {
     opacity: 0;
     transition: opacity 0.5s ease-in, transform 0.3s ease-in;
 }
 
-.left-links.show {
+.index_page .left-links.show {
     opacity: 1;
 }
 
