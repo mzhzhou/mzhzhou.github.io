@@ -180,15 +180,12 @@
                         <div class="project_process_title">Challenge 2: Existing tools don't work in a remote setting
                         </div>
                         <div class="project_process_text">
-                            A driving vision for what this product might be was the idea that users could utilise their
-                            own memories to help inform where they needed to go. This drew from principles in
-                            Orienteering, where professional orienteers look for identifiable ‘linear features’ near
-                            their marker location to help with ‘rough’ navigation.
-                        </div>
-                        <div class="project_process_text">
-                            Lane utilises graph network structures to find breadth-first routes that connect a database
-                            of points to each other. These suggestions are ordered based on the users’ degree of
-                            familiarity with memory points or routes they’ve already taken.
+                            For many of the pain points we heard from firefighters, the immediate response would be
+                            "There must be a product that already exists for this", to which the answer is always "If it
+                            needs the internet, we cannot use it." Wildfire firefighters continue to use primarily
+                            manual tools as these are the things that have been tried and tested to work in settings
+                            where they may not be in communication with anyone on their team. Any new tools that are
+                            introduced must be able to navigate this challenge of having no internet signal.
                         </div>
                         <div class="intro_visual">
                             <img src="assets/infer_challenge2.svg" />
@@ -200,10 +197,21 @@
                     <div class="intro_text">
                         <div class="project_process_title">Challenge 3: Keeping things low tech</div>
                         <div class="project_process_text">
-                            Individuals with spatial anxiety cover a broad range of user types. As a result, there were
-                            a number of different use cases and scenarios that needed to be considered - particularly in
-                            relation to how familiar a user might be with both their current environment, and with their
-                            intended destination.
+                            Our north star for the project was the concept of the radio being incredibly backlogged with
+                            information, with firefighters needing to wait till all other teams have shared, to share
+                            their status and information. It seemed that if everyone was able to have some form of an
+                            information receiver, this would help clear up space on the radio for only the most
+                            important and urgent lines of communication.
+
+                            As a team, we chose to design a tool that was embedded into an existing tool that works
+                            well. Anything we designed needed to be as low tech as possible, while remaining highly
+                            usable. We started prototyping ideas with Arduino and 3D printed parts to see if we could
+                            build an attachment that sits on top of the safety helmet, which could receive basic textual
+                            information. These devices would be connected within a LoRa mesh network to any device that
+                            was able to reach satellite signal. This means that as long as one device within the network
+                            is able to receive some signal, all devices could access that signal. At the home base, this
+                            would be connected to a desktop application that could track and send information to all
+                            devices.
                         </div>
                         <div class="intro_visual">
                             <img src="assets/infer_challenge3.svg" />
