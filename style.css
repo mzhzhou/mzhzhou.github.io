@@ -394,8 +394,8 @@ img {
 }
 
 .project_backing:hover {
-    animation: wiggle 0.3s ease;
-    animation-iteration-count: 1;
+    /* animation: wiggle 0.3s ease; */
+    /* animation-iteration-count: 1; */
 }
 
 .project_backing_whole_smill {
@@ -433,7 +433,7 @@ img {
 }
 
 .project_backing_whole_smill:hover {
-    rotate: 0.8deg;
+    /* rotate: 0.8deg; */
     /* animation: wiggle 0.3s ease; */
     /* animation: spin 0.8s ease; */
     /* transform: rotate3d(0, 1, 0, 180deg); */
@@ -445,12 +445,14 @@ img {
     border: 0.2px solid #1a3e2f;
     /* border: 0.2px solid #4149A2;
     background-color: #FEFDFF; */
+    background-color: #f7f7f7;
 }
 
 .project_backing_whole_smill:hover .project_backing_lower {
     border: 0.2px solid #1a3e2f;
     /* border: 0.2px solid #4149A2;
     background-color: #FEFDFF; */
+    background-color: #f7f7f7;
 }
 
 /* .project_backing_whole_smill:hover .project_home_image {
@@ -491,7 +493,7 @@ img {
 }
 
 .project_backing_whole_lane:hover {
-    rotate: 0.8deg;
+    /* rotate: 0.8deg; */
     /* animation: wiggle 0.3s ease; */
     /* animation: spin 0.8s ease; */
     /* transform: rotate3d(0, 1, 0, 180deg); */
@@ -503,8 +505,8 @@ img {
 
 .project_backing_whole_lane:hover .project_backing_lane {
     border: 0.2px solid #1a3e2f;
-    /* border: 0.2px solid #316FB3;
-    background-color: #EBEEED; */
+    /* border: 0.2px solid #316FB3; */
+    background-color: #f7f7f7;
 }
 
 /* .project_backing_whole_lane:hover .project_home_image {
@@ -515,6 +517,7 @@ img {
     border: 0.2px solid #1a3e2f;
     /* border: 0.2px solid #316FB3;
     background-color: #EBEEED; */
+    background-color: #f7f7f7;
 }
 
 /* .project_backing_whole_lane:hover .project_lower_text {
@@ -551,7 +554,7 @@ img {
 }
 
 .project_backing_whole_culi:hover {
-    rotate: 0.8deg;
+    /* rotate: 0.8deg; */
     /* animation: wiggle 0.3s ease; */
     /* animation: spin 0.8s ease; */
     /* animation-iteration-count: 1; */
@@ -563,6 +566,7 @@ img {
     border: 0.2px solid #1a3e2f;
     /* border: 0.2px solid #1B912B;
     background-color: #EBF2DD; */
+    background-color: #f7f7f7;
 }
 
 /* .project_backing_whole_culi:hover .project_home_image {
@@ -573,6 +577,7 @@ img {
     border: 0.2px solid #1a3e2f;
     /* border: 0.2px solid #1B912B;
     background-color: #EBF2DD; */
+    background-color: #f7f7f7;
 }
 
 /* .project_backing_whole_culi:hover .project_lower_text {
@@ -609,15 +614,17 @@ img {
 }
 
 .project_backing_whole_infer:hover {
-    rotate: 0.8deg;
+    /* rotate: 0.8deg; */
 }
 
 .project_backing_whole_infer:hover .project_backing_infer {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_backing_whole_infer:hover .project_backing_lower {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_backing_whole_bot {
@@ -642,15 +649,17 @@ img {
 }
 
 .project_backing_whole_bot:hover {
-    rotate: 0.8deg;
+    /* rotate: 0.8deg; */
 }
 
 .project_backing_whole_bot:hover .project_backing_bot {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_backing_whole_bot:hover .project_backing_lower {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_backing_whole_debi {
@@ -667,16 +676,18 @@ img {
 }
 
 .project_backing_whole_debi:hover {
-    rotate: 0.8deg;
-    animation-iteration-count: 1;
+    /* rotate: 0.8deg; */
+    /* animation-iteration-count: 1; */
 }
 
 .project_backing_whole_debi:hover .project_backing_debi {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_backing_whole_debi:hover .project_backing_lower {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_backing_multix {
@@ -706,15 +717,17 @@ img {
 }
 
 .project_backing_whole_emsi:hover {
-    rotate: 0.8deg;
+    /* rotate: 0.8deg; */
 }
 
 .project_backing_whole_emsi:hover .project_backing_emsi {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_backing_whole_emsi:hover .project_backing_lower {
     border: 0.2px solid #1a3e2f;
+    background-color: #f7f7f7;
 }
 
 .project_container {
@@ -728,8 +741,8 @@ img {
     align-items: left;
     gap: 12px;
     position: relative;
-    height: auto;
-    min-height: 330px;
+    height: 100%;
+    min-height: 350px;
 }
 
 .hover_image {
